@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner" project="actitime" tests="1" started="1" failures="0" errors="1" ignored="0">
+  <testsuite name="runner.TestRunner" time="14.04">
+    <testsuite name="Printing Google Search results" time="14.04">
+      <testcase name="User Search and print the company realated search" classname="Printing Google Search results" time="14.04">
+        <error>java.lang.NullPointerException&#13;
+	at stepdefinition.LoginSteps.close_the_browser(LoginSteps.java:63)&#13;
+	at ✽.close the browser(file:///D:/SynechronBDD_15_03_2021/Eclipse_WS/actitime/src/test/java/feature/googleSearchUsingDT.feature:9)&#13;
+&#13;
+</error>
+      </testcase>
+    </testsuite>
+  </testsuite>
+</testrun>

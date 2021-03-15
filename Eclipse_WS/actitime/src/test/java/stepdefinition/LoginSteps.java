@@ -24,10 +24,10 @@ public class LoginSteps {
 		driver.get("http://localhost/login.do");
 	}
 
-	@When("user enter valid username and password")
-	public void user_enter_valid_username_and_password() {
-		driver.findElement(By.id("username")).sendKeys("admin");
-		driver.findElement(By.name("pwd")).sendKeys("manager");
+	@When("user enter valid {} and {}")
+	public void user_enter_valid_username_and_password(String un , String pwd) {
+		driver.findElement(By.id("username")).sendKeys(un);
+		driver.findElement(By.name("pwd")).sendKeys(pwd);
 
 	}
 
@@ -47,11 +47,11 @@ public class LoginSteps {
 		Assert.assertEquals("actiTIME - Enter Time-Track", driver.getTitle());
 	}
 
-	@When("user enter invalid username and password")
-	public void user_enter_invalid_username_and_password() {
-		driver.findElement(By.id("username")).sendKeys("admin1");
-		driver.findElement(By.name("pwd")).sendKeys("manager1");
-	}
+//	@When("user enter invalid username and password")
+//	public void user_enter_invalid_username_and_password() {
+//		driver.findElement(By.id("username")).sendKeys("admin1");
+//		driver.findElement(By.name("pwd")).sendKeys("manager1");
+//	}
 
 	@Then("user will be stay on login page with error message")
 	public void user_will_be_stay_on_login_page_with_error_message() {

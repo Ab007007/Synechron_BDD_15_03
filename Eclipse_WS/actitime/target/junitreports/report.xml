@@ -1,31 +1,21 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="4" time="46.54">
-<testcase classname="Printing Google Search results" name="User Search for Synechron" time="13.542">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="44.193">
+<testcase classname="Printing Google Search results" name="User Search and print the company realated search" time="17.077">
 <system-out><![CDATA[Given user is on google page................................................passed
-When user enter synechron...................................................passed
-And click on search button..................................................passed
-Then user prints the search results for 5 pages.............................passed
+When data table user search company name and print the search results.......passed
+And user close the browser..................................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Printing Google Search results" name="User Search for IBM" time="12.603">
+<testcase classname="Printing Google Search results" name="User Search and print the company realated search using map" time="13.107">
 <system-out><![CDATA[Given user is on google page................................................passed
-When user enter "IBM".......................................................passed
-And click on search button..................................................passed
-Then user prints the search results for 2 pages.............................passed
+When map data table user search company name and print the search results...passed
+And user close the browser..................................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Printing Google Search results" name="User Search for Wipro" time="9.525">
+<testcase classname="Printing Google Search results" name="User Search and print the company realated search using lists" time="13.836">
 <system-out><![CDATA[Given user is on google page................................................passed
-When user enter "Wipro".....................................................passed
-And click on search button..................................................passed
-Then user prints the search results for 1 page..............................passed
-]]></system-out>
-</testcase>
-<testcase classname="Printing Google Search results" name="User Search for Number" time="10.691">
-<system-out><![CDATA[Given user is on google page................................................passed
-When user enter 12334.......................................................passed
-And click on search button..................................................passed
-Then user prints the search results for 1 page..............................passed
+When lists data table user search company name and print the search results.passed
+And user close the browser..................................................passed
 ]]></system-out>
 </testcase>
 </testsuite>

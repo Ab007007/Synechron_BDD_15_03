@@ -1,0 +1,13 @@
+Feature: Printing Google Search results
+
+  Scenario: User Search for Synechron
+    Given user is on google page
+    When user enter synechron
+    And click on search button
+    Then user prints the search results for 5 pages
+
+  Examples:
+|company|
+|synechron|
+|IBM|
+|Wipro|

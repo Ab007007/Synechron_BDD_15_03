@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner" project="actitime" tests="2" started="2" failures="0" errors="1" ignored="0">
+  <testsuite name="runner.TestRunner" time="19.211">
+    <testsuite name="Printing Google Search results" time="19.211">
+      <testcase name="User Search and print the company realated search" classname="Printing Google Search results" time="14.92"/>
+      <testcase name="User Search and print the company realated search using map" classname="Printing Google Search results" time="4.291">
+        <error>java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence&#13;
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:97)&#13;
+	at stepdefinition.GoogleSearch.map_data_table_user_search_company_name_and_print_the_search_results(GoogleSearch.java:103)&#13;
+	at ✽.map data table user search company name and print the search results(file:///D:/SynechronBDD_15_03_2021/Eclipse_WS/actitime/src/test/java/feature/googleSearchUsingDT.feature:13)&#13;
+&#13;
+</error>
+      </testcase>
+    </testsuite>
+  </testsuite>
+</testrun>

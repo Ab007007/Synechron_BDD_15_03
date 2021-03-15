@@ -1,0 +1,9 @@
+Feature: Printing Google Search results
+
+  Scenario: User Search for Synechron
+    Given user is on google page
+    When data table user search company name and print the search results
+      | synechron |
+      | ibm       |
+      | wipro     |
+    And close the browser

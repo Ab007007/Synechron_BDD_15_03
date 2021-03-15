@@ -3,17 +3,17 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2021-03-15T08:03:07.438Z",
+        "start_timestamp": "2021-03-15T10:43:55.842Z",
         "line": 3,
-        "name": "User Search for Synechron",
+        "name": "User Search and print the company realated search",
         "description": "",
-        "id": "printing-google-search-results;user-search-for-synechron",
+        "id": "printing-google-search-results;user-search-and-print-the-company-realated-search",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 5041000000,
+              "duration": 5431000000,
               "status": "passed"
             },
             "line": 4,
@@ -25,211 +25,131 @@
           },
           {
             "result": {
-              "duration": 80000000,
+              "duration": 9492000000,
               "status": "passed"
             },
             "line": 5,
-            "name": "user enter synechron",
+            "name": "data table user search company name and print the search results",
             "match": {
-              "arguments": [
-                {
-                  "val": "synechron",
-                  "offset": 11
-                }
-              ],
-              "location": "stepdefinition.GoogleSearch.user_enter(java.lang.String)"
+              "location": "stepdefinition.GoogleSearch.data_table_user_search_company_name_and_print_the_search_results(io.cucumber.datatable.DataTable)"
             },
+            "rows": [
+              {
+                "cells": [
+                  "synechron"
+                ]
+              },
+              {
+                "cells": [
+                  "ibm"
+                ]
+              },
+              {
+                "cells": [
+                  "wipro"
+                ]
+              }
+            ],
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 1881000000,
+              "duration": 2063000000,
               "status": "passed"
             },
-            "line": 6,
-            "name": "click on search button",
+            "line": 9,
+            "name": "user close the browser",
             "match": {
-              "location": "stepdefinition.GoogleSearch.click_on_search_button()"
+              "location": "stepdefinition.GoogleSearch.close_the_browser()"
             },
             "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 6453000000,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "user prints the search results for 5 pages",
-            "match": {
-              "arguments": [
-                {
-                  "val": "5",
-                  "offset": 35
-                }
-              ],
-              "location": "stepdefinition.GoogleSearch.user_prints_the_search_results(java.lang.Integer)"
-            },
-            "keyword": "Then "
           }
         ]
       },
       {
-        "start_timestamp": "2021-03-15T08:03:20.993Z",
-        "line": 9,
-        "name": "User Search for IBM",
+        "start_timestamp": "2021-03-15T10:44:12.928Z",
+        "line": 11,
+        "name": "User Search and print the company realated search using map",
         "description": "",
-        "id": "printing-google-search-results;user-search-for-ibm",
+        "id": "printing-google-search-results;user-search-and-print-the-company-realated-search-using-map",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 3489000000,
-              "status": "passed"
-            },
-            "line": 10,
-            "name": "user is on google page",
-            "match": {
-              "location": "stepdefinition.GoogleSearch.user_is_on_google_page()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 75000000,
-              "status": "passed"
-            },
-            "line": 11,
-            "name": "user enter \"IBM\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"IBM\"",
-                  "offset": 11
-                }
-              ],
-              "location": "stepdefinition.GoogleSearch.user_enter(java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 3645000000,
+              "duration": 4014000000,
               "status": "passed"
             },
             "line": 12,
-            "name": "click on search button",
+            "name": "user is on google page",
             "match": {
-              "location": "stepdefinition.GoogleSearch.click_on_search_button()"
+              "location": "stepdefinition.GoogleSearch.user_is_on_google_page()"
             },
-            "keyword": "And "
+            "keyword": "Given "
           },
           {
             "result": {
-              "duration": 5389000000,
+              "duration": 7019000000,
               "status": "passed"
             },
             "line": 13,
-            "name": "user prints the search results for 2 pages",
+            "name": "map data table user search company name and print the search results",
             "match": {
-              "arguments": [
-                {
-                  "val": "2",
-                  "offset": 35
-                }
-              ],
-              "location": "stepdefinition.GoogleSearch.user_prints_the_search_results(java.lang.Integer)"
+              "location": "stepdefinition.GoogleSearch.map_data_table_user_search_company_name_and_print_the_search_results(io.cucumber.datatable.DataTable)"
             },
-            "keyword": "Then "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2021-03-15T08:03:33.598Z",
-        "line": 15,
-        "name": "User Search for Wipro",
-        "description": "",
-        "id": "printing-google-search-results;user-search-for-wipro",
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 3650000000,
-              "status": "passed"
-            },
-            "line": 16,
-            "name": "user is on google page",
-            "match": {
-              "location": "stepdefinition.GoogleSearch.user_is_on_google_page()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 67000000,
-              "status": "passed"
-            },
-            "line": 17,
-            "name": "user enter \"Wipro\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Wipro\"",
-                  "offset": 11
-                }
-              ],
-              "location": "stepdefinition.GoogleSearch.user_enter(java.lang.String)"
-            },
+            "rows": [
+              {
+                "cells": [
+                  "company"
+                ]
+              },
+              {
+                "cells": [
+                  "synechron"
+                ]
+              },
+              {
+                "cells": [
+                  "ibm"
+                ]
+              },
+              {
+                "cells": [
+                  "wipro"
+                ]
+              }
+            ],
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 2210000000,
+              "duration": 2072000000,
               "status": "passed"
             },
             "line": 18,
-            "name": "click on search button",
+            "name": "user close the browser",
             "match": {
-              "location": "stepdefinition.GoogleSearch.click_on_search_button()"
+              "location": "stepdefinition.GoogleSearch.close_the_browser()"
             },
             "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 3596000000,
-              "status": "passed"
-            },
-            "line": 19,
-            "name": "user prints the search results for 1 page",
-            "match": {
-              "arguments": [
-                {
-                  "val": "1",
-                  "offset": 35
-                }
-              ],
-              "location": "stepdefinition.GoogleSearch.user_prints_the_search_results(java.lang.Integer)"
-            },
-            "keyword": "Then "
           }
         ]
       },
       {
-        "start_timestamp": "2021-03-15T08:03:43.128Z",
-        "line": 21,
-        "name": "User Search for Number",
+        "start_timestamp": "2021-03-15T10:44:26.049Z",
+        "line": 20,
+        "name": "User Search and print the company realated search using lists",
         "description": "",
-        "id": "printing-google-search-results;user-search-for-number",
+        "id": "printing-google-search-results;user-search-and-print-the-company-realated-search-using-lists",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 3431000000,
+              "duration": 3829000000,
               "status": "passed"
             },
-            "line": 22,
+            "line": 21,
             "name": "user is on google page",
             "match": {
               "location": "stepdefinition.GoogleSearch.user_is_on_google_page()"
@@ -238,51 +158,44 @@
           },
           {
             "result": {
-              "duration": 58000000,
+              "duration": 7937000000,
               "status": "passed"
             },
-            "line": 23,
-            "name": "user enter 12334",
+            "line": 22,
+            "name": "lists data table user search company name and print the search results",
             "match": {
-              "arguments": [
-                {
-                  "val": "12334",
-                  "offset": 11
-                }
-              ],
-              "location": "stepdefinition.GoogleSearch.user_enter(java.lang.String)"
+              "location": "stepdefinition.GoogleSearch.lists_data_table_user_search_company_name_and_print_the_search_results(io.cucumber.datatable.DataTable)"
             },
+            "rows": [
+              {
+                "cells": [
+                  "synechron"
+                ]
+              },
+              {
+                "cells": [
+                  "ibm"
+                ]
+              },
+              {
+                "cells": [
+                  "wipro"
+                ]
+              }
+            ],
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 826000000,
+              "duration": 2067000000,
               "status": "passed"
             },
-            "line": 24,
-            "name": "click on search button",
+            "line": 26,
+            "name": "user close the browser",
             "match": {
-              "location": "stepdefinition.GoogleSearch.click_on_search_button()"
+              "location": "stepdefinition.GoogleSearch.close_the_browser()"
             },
             "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 6371000000,
-              "status": "passed"
-            },
-            "line": 25,
-            "name": "user prints the search results for 1 page",
-            "match": {
-              "arguments": [
-                {
-                  "val": "1",
-                  "offset": 35
-                }
-              ],
-              "location": "stepdefinition.GoogleSearch.user_prints_the_search_results(java.lang.Integer)"
-            },
-            "keyword": "Then "
           }
         ]
       }
@@ -291,7 +204,7 @@
     "description": "",
     "id": "printing-google-search-results",
     "keyword": "Feature",
-    "uri": "file:src/test/java/feature/printsearchresults.feature",
+    "uri": "file:src/test/java/feature/googleSearchUsingDT.feature",
     "tags": []
   }
 ]

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner" project="actitime" tests="2" started="2" failures="0" errors="1" ignored="0">
+  <testsuite name="runner.TestRunner" time="0.162">
+    <testsuite name="Printing Google Search results" time="0.162">
+      <testcase name="User Search and print the company realated search" classname="Printing Google Search results" time="0.117"/>
+      <testcase name="User Search and print the company realated search using map" classname="Printing Google Search results" time="0.045">
+        <error>io.cucumber.junit.UndefinedStepException: The step 'map data table user search company name and print the search results' is undefined.
+You can implement this step using the snippet(s) below:
+
+@When("map data table user search company name and print the search results")
+public void map_data_table_user_search_company_name_and_print_the_search_results(io.cucumber.datatable.DataTable dataTable) {
+    // Write code here that turns the phrase above into concrete actions
+    // For automatic transformation, change DataTable to one of
+    // E, List&lt;E&gt;, List&lt;List&lt;E&gt;&gt;, List&lt;Map&lt;K,V&gt;&gt;, Map&lt;K,V&gt; or
+    // Map&lt;K, List&lt;V&gt;&gt;. E,K,V must be a String, Integer, Float,
+    // Double, Byte, Short, Long, BigInteger or BigDecimal.
+    //
+    // For other transformations you can register a DataTableType.
+    throw new io.cucumber.java.PendingException();
+}
+&#13;
+&#13;
+</error>
+      </testcase>
+    </testsuite>
+  </testsuite>
+</testrun>

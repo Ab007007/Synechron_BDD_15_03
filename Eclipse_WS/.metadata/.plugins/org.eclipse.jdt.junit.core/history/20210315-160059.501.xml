@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner" project="actitime" tests="2" started="2" failures="0" errors="0" ignored="0">
+  <testsuite name="runner.TestRunner" time="0.212">
+    <testsuite name="Printing Google Search results" time="0.212">
+      <testcase name="User Search and print the company realated search" classname="Printing Google Search results" time="0.105"/>
+      <testcase name="User Search and print the company realated search using map" classname="Printing Google Search results" time="0.107"/>
+    </testsuite>
+  </testsuite>
+</testrun>
