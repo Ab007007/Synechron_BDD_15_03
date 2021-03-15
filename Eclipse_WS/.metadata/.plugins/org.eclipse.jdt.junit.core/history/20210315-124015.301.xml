@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner" project="actitime" tests="3" started="3" failures="0" errors="3" ignored="0">
+  <testsuite name="runner.TestRunner" time="0.177">
+    <testsuite name="Printing Google Search results" time="0.177">
+      <testcase name="User Search for Synechron" classname="Printing Google Search results" time="0.149">
+        <error>io.cucumber.junit.UndefinedStepException: The step 'user is on google page' and 3 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given("user is on google page")
+public void user_is_on_google_page() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("user enter synechron")
+public void user_enter_synechron() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("click on search button")
+public void click_on_search_button() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("user prints the search results")
+public void user_prints_the_search_results() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+&#13;
+&#13;
+</error>
+      </testcase>
+      <testcase name="User Search for IBM" classname="Printing Google Search results" time="0.013">
+        <error>io.cucumber.junit.UndefinedStepException: The step 'user is on google page' and 3 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given("user is on google page")
+public void user_is_on_google_page() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("user enter IBM")
+public void user_enter_ibm() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("click on search button")
+public void click_on_search_button() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("user prints the search results")
+public void user_prints_the_search_results() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+&#13;
+&#13;
+</error>
+      </testcase>
+      <testcase name="User Search for Wipro" classname="Printing Google Search results" time="0.008">
+        <error>io.cucumber.junit.UndefinedStepException: The step 'user is on google page' and 3 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given("user is on google page")
+public void user_is_on_google_page() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("user enter Wipro")
+public void user_enter_wipro() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("click on search button")
+public void click_on_search_button() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("user prints the search results")
+public void user_prints_the_search_results() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+&#13;
+&#13;
+</error>
+      </testcase>
+    </testsuite>
+  </testsuite>
+</testrun>

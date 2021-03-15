@@ -3,7 +3,7 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2021-03-15T07:10:15.456Z",
+        "start_timestamp": "2021-03-15T08:03:07.438Z",
         "line": 3,
         "name": "User Search for Synechron",
         "description": "",
@@ -13,44 +13,68 @@
         "steps": [
           {
             "result": {
-              "status": "undefined"
+              "duration": 5041000000,
+              "status": "passed"
             },
             "line": 4,
             "name": "user is on google page",
-            "match": {},
+            "match": {
+              "location": "stepdefinition.GoogleSearch.user_is_on_google_page()"
+            },
             "keyword": "Given "
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 80000000,
+              "status": "passed"
             },
             "line": 5,
             "name": "user enter synechron",
-            "match": {},
+            "match": {
+              "arguments": [
+                {
+                  "val": "synechron",
+                  "offset": 11
+                }
+              ],
+              "location": "stepdefinition.GoogleSearch.user_enter(java.lang.String)"
+            },
             "keyword": "When "
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 1881000000,
+              "status": "passed"
             },
             "line": 6,
             "name": "click on search button",
-            "match": {},
+            "match": {
+              "location": "stepdefinition.GoogleSearch.click_on_search_button()"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 6453000000,
+              "status": "passed"
             },
             "line": 7,
-            "name": "user prints the search results",
-            "match": {},
+            "name": "user prints the search results for 5 pages",
+            "match": {
+              "arguments": [
+                {
+                  "val": "5",
+                  "offset": 35
+                }
+              ],
+              "location": "stepdefinition.GoogleSearch.user_prints_the_search_results(java.lang.Integer)"
+            },
             "keyword": "Then "
           }
         ]
       },
       {
-        "start_timestamp": "2021-03-15T07:10:15.584Z",
+        "start_timestamp": "2021-03-15T08:03:20.993Z",
         "line": 9,
         "name": "User Search for IBM",
         "description": "",
@@ -60,45 +84,68 @@
         "steps": [
           {
             "result": {
-              "status": "undefined"
+              "duration": 3489000000,
+              "status": "passed"
             },
             "line": 10,
             "name": "user is on google page",
-            "match": {},
+            "match": {
+              "location": "stepdefinition.GoogleSearch.user_is_on_google_page()"
+            },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 1000000,
-              "status": "skipped"
+              "duration": 75000000,
+              "status": "passed"
             },
             "line": 11,
-            "name": "user enter IBM",
-            "match": {},
+            "name": "user enter \"IBM\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"IBM\"",
+                  "offset": 11
+                }
+              ],
+              "location": "stepdefinition.GoogleSearch.user_enter(java.lang.String)"
+            },
             "keyword": "When "
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 3645000000,
+              "status": "passed"
             },
             "line": 12,
             "name": "click on search button",
-            "match": {},
+            "match": {
+              "location": "stepdefinition.GoogleSearch.click_on_search_button()"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 5389000000,
+              "status": "passed"
             },
             "line": 13,
-            "name": "user prints the search results",
-            "match": {},
+            "name": "user prints the search results for 2 pages",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2",
+                  "offset": 35
+                }
+              ],
+              "location": "stepdefinition.GoogleSearch.user_prints_the_search_results(java.lang.Integer)"
+            },
             "keyword": "Then "
           }
         ]
       },
       {
-        "start_timestamp": "2021-03-15T07:10:15.594Z",
+        "start_timestamp": "2021-03-15T08:03:33.598Z",
         "line": 15,
         "name": "User Search for Wipro",
         "description": "",
@@ -108,38 +155,133 @@
         "steps": [
           {
             "result": {
-              "status": "undefined"
+              "duration": 3650000000,
+              "status": "passed"
             },
             "line": 16,
             "name": "user is on google page",
-            "match": {},
+            "match": {
+              "location": "stepdefinition.GoogleSearch.user_is_on_google_page()"
+            },
             "keyword": "Given "
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 67000000,
+              "status": "passed"
             },
             "line": 17,
-            "name": "user enter Wipro",
-            "match": {},
+            "name": "user enter \"Wipro\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Wipro\"",
+                  "offset": 11
+                }
+              ],
+              "location": "stepdefinition.GoogleSearch.user_enter(java.lang.String)"
+            },
             "keyword": "When "
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 2210000000,
+              "status": "passed"
             },
             "line": 18,
             "name": "click on search button",
-            "match": {},
+            "match": {
+              "location": "stepdefinition.GoogleSearch.click_on_search_button()"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 3596000000,
+              "status": "passed"
             },
             "line": 19,
-            "name": "user prints the search results",
-            "match": {},
+            "name": "user prints the search results for 1 page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 35
+                }
+              ],
+              "location": "stepdefinition.GoogleSearch.user_prints_the_search_results(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-03-15T08:03:43.128Z",
+        "line": 21,
+        "name": "User Search for Number",
+        "description": "",
+        "id": "printing-google-search-results;user-search-for-number",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3431000000,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "user is on google page",
+            "match": {
+              "location": "stepdefinition.GoogleSearch.user_is_on_google_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 58000000,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "user enter 12334",
+            "match": {
+              "arguments": [
+                {
+                  "val": "12334",
+                  "offset": 11
+                }
+              ],
+              "location": "stepdefinition.GoogleSearch.user_enter(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 826000000,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "click on search button",
+            "match": {
+              "location": "stepdefinition.GoogleSearch.click_on_search_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6371000000,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "user prints the search results for 1 page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 35
+                }
+              ],
+              "location": "stepdefinition.GoogleSearch.user_prints_the_search_results(java.lang.Integer)"
+            },
             "keyword": "Then "
           }
         ]

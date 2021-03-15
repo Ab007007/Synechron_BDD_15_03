@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner" project="actitime" tests="4" started="4" failures="0" errors="2" ignored="0">
+  <testsuite name="runner.TestRunner" time="0.308">
+    <testsuite name="Printing Google Search results" time="0.308">
+      <testcase name="User Search for Synechron" classname="Printing Google Search results" time="0.138">
+        <error>io.cucumber.core.runner.AmbiguousStepDefinitionsException: "user prints the search results for 5 pages" matches more than one step definition:
+  "user prints the search results for {int} page(s)" in stepdefinition.GoogleSearch.user_prints_the_search_results_for_pages(java.lang.Integer)
+  "user prints the search results for {int} pages" in stepdefinition.GoogleSearch.user_prints_the_search_results(java.lang.Integer)&#13;
+	at io.cucumber.core.runner.CachingGlue.findStepDefinitionMatch(CachingGlue.java:373)&#13;
+	at io.cucumber.core.runner.CachingGlue.stepDefinitionMatch(CachingGlue.java:341)&#13;
+	at io.cucumber.core.runner.Runner.matchStepToStepDefinition(Runner.java:148)&#13;
+	at io.cucumber.core.runner.Runner.createTestStepsForPickleSteps(Runner.java:128)&#13;
+	at io.cucumber.core.runner.Runner.createTestCaseForPickle(Runner.java:111)&#13;
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:72)&#13;
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:151)&#13;
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:135)&#13;
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:27)&#13;
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)&#13;
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)&#13;
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)&#13;
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)&#13;
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)&#13;
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)&#13;
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)&#13;
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:200)&#13;
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:90)&#13;
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)&#13;
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)&#13;
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)&#13;
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)&#13;
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)&#13;
+	at io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:235)&#13;
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)&#13;
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)&#13;
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:89)&#13;
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:41)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:541)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:763)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:463)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:209)&#13;
+&#13;
+</error>
+      </testcase>
+      <testcase name="User Search for IBM" classname="Printing Google Search results" time="0.012">
+        <error>io.cucumber.core.runner.AmbiguousStepDefinitionsException: "user prints the search results for 2 pages" matches more than one step definition:
+  "user prints the search results for {int} page(s)" in stepdefinition.GoogleSearch.user_prints_the_search_results_for_pages(java.lang.Integer)
+  "user prints the search results for {int} pages" in stepdefinition.GoogleSearch.user_prints_the_search_results(java.lang.Integer)&#13;
+	at io.cucumber.core.runner.CachingGlue.findStepDefinitionMatch(CachingGlue.java:373)&#13;
+	at io.cucumber.core.runner.CachingGlue.stepDefinitionMatch(CachingGlue.java:341)&#13;
+	at io.cucumber.core.runner.Runner.matchStepToStepDefinition(Runner.java:148)&#13;
+	at io.cucumber.core.runner.Runner.createTestStepsForPickleSteps(Runner.java:128)&#13;
+	at io.cucumber.core.runner.Runner.createTestCaseForPickle(Runner.java:111)&#13;
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:72)&#13;
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:151)&#13;
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:135)&#13;
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:27)&#13;
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)&#13;
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)&#13;
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)&#13;
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)&#13;
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)&#13;
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)&#13;
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)&#13;
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:200)&#13;
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:90)&#13;
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)&#13;
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)&#13;
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)&#13;
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)&#13;
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)&#13;
+	at io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:235)&#13;
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)&#13;
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)&#13;
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:89)&#13;
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:41)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:541)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:763)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:463)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:209)&#13;
+&#13;
+</error>
+      </testcase>
+      <testcase name="User Search for Wipro" classname="Printing Google Search results" time="0.006"/>
+      <testcase name="User Search for Number" classname="Printing Google Search results" time="0.144"/>
+    </testsuite>
+  </testsuite>
+</testrun>

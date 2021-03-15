@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner" project="actitime" tests="4" started="4" failures="0" errors="4" ignored="0">
+  <testsuite name="runner.TestRunner" time="0.152">
+    <testsuite name="Printing Google Search results" time="0.152">
+      <testcase name="User Search for Synechron" classname="Printing Google Search results" time="0.118">
+        <error>io.cucumber.junit.UndefinedStepException: The step 'user prints the search results for 5 pages' is undefined.
+You can implement this step using the snippet(s) below:
+
+@Then("user prints the search results for {int} pages")
+public void user_prints_the_search_results_for_pages(Integer int1) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+&#13;
+&#13;
+</error>
+      </testcase>
+      <testcase name="User Search for IBM" classname="Printing Google Search results" time="0.011">
+        <error>io.cucumber.junit.UndefinedStepException: The step 'user prints the search results for 2 pages' is undefined.
+You can implement this step using the snippet(s) below:
+
+@Then("user prints the search results for {int} pages")
+public void user_prints_the_search_results_for_pages(Integer int1) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+&#13;
+&#13;
+</error>
+      </testcase>
+      <testcase name="User Search for Wipro" classname="Printing Google Search results" time="0.009">
+        <error>io.cucumber.junit.UndefinedStepException: The step 'user prints the search results for 1 page' is undefined.
+You can implement this step using the snippet(s) below:
+
+@Then("user prints the search results for {int} page")
+public void user_prints_the_search_results_for_page(Integer int1) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+&#13;
+&#13;
+</error>
+      </testcase>
+      <testcase name="User Search for Number" classname="Printing Google Search results" time="0.009">
+        <error>io.cucumber.junit.UndefinedStepException: The step 'user prints the search results for 1 page' is undefined.
+You can implement this step using the snippet(s) below:
+
+@Then("user prints the search results for {int} page")
+public void user_prints_the_search_results_for_page(Integer int1) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+&#13;
+&#13;
+</error>
+      </testcase>
+    </testsuite>
+  </testsuite>
+</testrun>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner" project="actitime" tests="4" started="4" failures="0" errors="1" ignored="0">
+  <testsuite name="runner.TestRunner" time="0.202">
+    <testsuite name="Printing Google Search results" time="0.202">
+      <testcase name="User Search for Synechron" classname="Printing Google Search results" time="0.125"/>
+      <testcase name="User Search for IBM" classname="Printing Google Search results" time="0.013"/>
+      <testcase name="User Search for Wipro" classname="Printing Google Search results" time="0.005"/>
+      <testcase name="User Search for Number" classname="Printing Google Search results" time="0.058">
+        <error>io.cucumber.junit.UndefinedStepException: The step 'user enter 12334' is undefined.
+You can implement this step using the snippet(s) below:
+
+@When("user enter {int}")
+public void user_enter(Integer int1) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+&#13;
+&#13;
+</error>
+      </testcase>
+    </testsuite>
+  </testsuite>
+</testrun>

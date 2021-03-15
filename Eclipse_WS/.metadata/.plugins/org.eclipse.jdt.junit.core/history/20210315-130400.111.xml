@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner" project="actitime" tests="3" started="3" failures="0" errors="3" ignored="0">
+  <testsuite name="runner.TestRunner" time="0.181">
+    <testsuite name="Printing Google Search results" time="0.181">
+      <testcase name="User Search for Synechron" classname="Printing Google Search results" time="0.162">
+        <error>io.cucumber.junit.UndefinedStepException: The step 'user enter "synechron"' is undefined.
+You can implement this step using the snippet(s) below:
+
+@When("user enter {string}")
+public void user_enter(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+&#13;
+&#13;
+</error>
+      </testcase>
+      <testcase name="User Search for IBM" classname="Printing Google Search results" time="0.008">
+        <error>io.cucumber.junit.UndefinedStepException: The step 'user enter "IBM"' is undefined.
+You can implement this step using the snippet(s) below:
+
+@When("user enter {string}")
+public void user_enter(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+&#13;
+&#13;
+</error>
+      </testcase>
+      <testcase name="User Search for Wipro" classname="Printing Google Search results" time="0.005">
+        <error>io.cucumber.junit.UndefinedStepException: The step 'user enter "Wipro"' is undefined.
+You can implement this step using the snippet(s) below:
+
+@When("user enter {string}")
+public void user_enter(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+&#13;
+&#13;
+</error>
+      </testcase>
+    </testsuite>
+  </testsuite>
+</testrun>
