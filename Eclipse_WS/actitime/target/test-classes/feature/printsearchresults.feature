@@ -1,0 +1,19 @@
+Feature: Printing Google Search results
+
+  Scenario: User Search for Synechron
+    Given user is on google page
+    When user enter synechron
+    And click on search button
+    Then user prints the search results
+
+  Scenario: User Search for IBM
+    Given user is on google page
+    When user enter IBM
+    And click on search button
+    Then user prints the search results
+
+  Scenario: User Search for Wipro
+    Given user is on google page
+    When user enter Wipro
+    And click on search button
+    Then user prints the search results

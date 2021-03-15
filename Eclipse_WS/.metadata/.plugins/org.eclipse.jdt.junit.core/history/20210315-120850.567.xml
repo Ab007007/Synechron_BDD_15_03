@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner" project="actitime" tests="2" started="2" failures="0" errors="2" ignored="0">
+  <testsuite name="runner.TestRunner" time="0.087">
+    <testsuite name="Login Functionality" time="0.087">
+      <testcase name="Successful Login" classname="Login Functionality" time="0.078">
+        <error>io.cucumber.junit.UndefinedStepException: The step 'close the browser' is undefined.
+You can implement this step using the snippet(s) below:
+
+@Then("close the browser")
+public void close_the_browser() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+&#13;
+&#13;
+</error>
+      </testcase>
+      <testcase name="UnSuccessful Login" classname="Login Functionality" time="0.007">
+        <error>io.cucumber.junit.UndefinedStepException: The step 'close the browser' is undefined.
+You can implement this step using the snippet(s) below:
+
+@Then("close the browser")
+public void close_the_browser() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+&#13;
+&#13;
+</error>
+      </testcase>
+    </testsuite>
+  </testsuite>
+</testrun>

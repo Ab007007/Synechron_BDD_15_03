@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="io.cucumber.core.plugin.JUnitFormatter" tests="2" started="2" failures="0" errors="0" ignored="0">
+  <testsuite name="io.cucumber.core.plugin.JUnitFormatter" time="22.126">
+    <testcase name="Successful Login" classname="Login Functionality" time="12.534"/>
+    <testcase name="UnSuccessful Login" classname="Login Functionality" time="9.415"/>
+  </testsuite>
+</testrun>

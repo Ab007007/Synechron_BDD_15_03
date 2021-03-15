@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="3" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="0.329">
+<testcase classname="Printing Google Search results" name="User Search for Synechron" time="0.108">
+<failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[Given user is on google page................................................undefined
+When user enter synechron...................................................skipped
+And click on search button..................................................skipped
+Then user prints the search results.........................................skipped
+]]></failure>
+</testcase>
+<testcase classname="Printing Google Search results" name="User Search for IBM" time="0.004">
+<failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[Given user is on google page................................................undefined
+When user enter IBM.........................................................skipped
+And click on search button..................................................skipped
+Then user prints the search results.........................................skipped
+]]></failure>
+</testcase>
+<testcase classname="Printing Google Search results" name="User Search for Wipro" time="0.003">
+<failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[Given user is on google page................................................undefined
+When user enter Wipro.......................................................skipped
+And click on search button..................................................skipped
+Then user prints the search results.........................................skipped
+]]></failure>
+</testcase>
+</testsuite>
