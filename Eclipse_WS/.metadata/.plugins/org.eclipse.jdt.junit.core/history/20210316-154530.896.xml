@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner" project="actitime" tests="1" started="1" failures="0" errors="1" ignored="0">
+  <testsuite name="runner.TestRunner" time="3.096">
+    <testsuite name="Printing Google Search results #2" time="3.096">
+      <testcase name="User Search and print the company realated search" classname="Printing Google Search results #2" time="3.096">
+        <error>java.lang.NullPointerException&#13;
+	at stepdefinition.GoogleSearch.hookuser_is_on_google_page(GoogleSearch.java:152)&#13;
+	at ✽.hookuser is on google page(file:///D:/SynechronBDD_15_03_2021/Eclipse_WS/actitime/src/test/java/feature/googleSearchUsingHooks.feature:4)&#13;
+&#13;
+</error>
+      </testcase>
+    </testsuite>
+  </testsuite>
+</testrun>

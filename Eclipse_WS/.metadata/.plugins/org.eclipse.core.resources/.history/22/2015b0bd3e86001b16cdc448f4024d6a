@@ -1,0 +1,15 @@
+package stepdefinition;
+
+import io.cucumber.java.Before;
+
+public class HooksDemo {
+
+	
+	@Before
+	public void setup()
+	{
+		System.out.println("---Creating browser Object ----");
+	}
+	
+	
+}

@@ -1,0 +1,9 @@
+Feature: Printing Google Search results
+	@hooks
+  Scenario: User Search and print the company realated search
+    Given hookuser is on google page
+    When data table hookuser search company name and print the search results
+      | synechron |
+      | ibm       |
+      | wipro     |
+    And hookuser close the browser

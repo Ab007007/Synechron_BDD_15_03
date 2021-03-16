@@ -14,7 +14,7 @@ import io.cucumber.junit.CucumberOptions;
 		//tags = "@test1",
 		//tags = "@test1 and @test2",
 //		tags = "@test1 or @test2",
-		tags = "@development",
+		tags = "@hooks",
 		plugin = {"pretty","junit:target/junitreports/report.xml",
 							"html:target/htmlreports/report.html",
 							"json:target/jsonreports/report.json"})

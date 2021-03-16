@@ -1,6 +1,6 @@
 package stepdefinition;
 
-import java.util.Random;
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 import org.junit.Assert;
@@ -12,6 +12,7 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -177,12 +178,27 @@ public class ActitimeSteps {
 		System.out.println(toastElement.getText());
 		wait.until(ExpectedConditions.invisibilityOf(driver.findElement(By.xpath("//div[@class='toast']"))));
 
-
 	}
 
 	@Then("user will confirm by clicking on delete button")
 	public void user_will_confirm_by_clicking_on_delete_button() throws InterruptedException {
-		
+
+	}
+
+	@When("user create multiple customer and validate success message")
+	public void user_create_multiple_customer_and_validate_success_message(DataTable dataTable)
+			throws InterruptedException {
+		List<List<String>> data = dataTable.asLists();
+		String customerName = null;
+		String customerDesc = null;
+		for (int i = 0; i < data.size(); i++) {
+			customerName = data.get(i).get(0);
+			customerDesc = data.get(i).get(1);
+			user_click_on_new_customer_button();
+			user_enter_customername_and_customerdesc(customerName, customerDesc);
+			click_on_create_customer();
+			user_validate_the_success_message();
+		}
 	}
 
 }

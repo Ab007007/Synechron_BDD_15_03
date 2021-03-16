@@ -1,3 +1,4 @@
+@dev
 Feature: Customer Creation
 
   Background: 
@@ -6,7 +7,7 @@ Feature: Customer Creation
 
   @actitime
   Scenario: Create new customer
-    When user reate multiple customer and validate success message
+    When user create multiple customer and validate success message
       | Syn-BDD-Customer-Mar5 | Syn-BDD-CustomerDesc-Mar5 |
       | Syn-BDD-Customer-Mar6 | Syn-BDD-CustomerDesc-Mar6 |
       | Syn-BDD-Customer-Mar7 | Syn-BDD-CustomerDesc-Mar7 |

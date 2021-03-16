@@ -1,26 +1,24 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="30.486">
-<testcase classname="Customer Deletion" name="Delete customer" time="30.255">
-<failure message="Cannot locate an element using xpath=//div[@class='toast']&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'ARAVINDA-DELL-P', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'&#10;Driver info: driver.version: RemoteWebDriver" type="org.openqa.selenium.NoSuchElementException"><![CDATA[Given user is logged in to the application..................................passed
-When user click on tasks and verify the task page...........................passed
-Then user search for a customer Customer-TestngDec-2020-3 and click on settings button.passed
-And click on Actions and delete button......................................passed
-Then user will confirm by clicking on delete button.........................passed
-And user validate the success message.......................................failed
-And logout of the application...............................................skipped
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="27.764">
+<testcase classname="Printing Google Search results" name="User Search and print the company realated search" time="14.511">
+<system-out><![CDATA[Given hookuser is on google page............................................passed
+When data table user search company name and print the search results.......passed
+]]></system-out>
+</testcase>
+<testcase classname="Printing Google Search results" name="User Search and print the company realated search 2" time="12.988">
+<failure message="" type="junit.framework.AssertionFailedError"><![CDATA[Given hookuser is on google page............................................passed
+When guser enter IBMMMM.....................................................passed
+And click on search button..................................................passed
+Then user prints the search results for 5 pages.............................failed
 
 StackTrace:
-org.openqa.selenium.NoSuchElementException: Cannot locate an element using xpath=//div[@class='toast']
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'ARAVINDA-DELL-P', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
-Driver info: driver.version: RemoteWebDriver
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at stepdefinition.ActitimeSteps.user_validate_the_success_message(ActitimeSteps.java:124)
-	at ✽.user validate the success message(file:///D:/SynechronBDD_15_03_2021/Eclipse_WS/actitime/src/test/java/feature/deleteCustomer.feature:12)
+junit.framework.AssertionFailedError
+	at junit.framework.Assert.fail(Assert.java:55)
+	at junit.framework.Assert.assertTrue(Assert.java:22)
+	at junit.framework.Assert.assertFalse(Assert.java:39)
+	at junit.framework.Assert.assertFalse(Assert.java:47)
+	at stepdefinition.GoogleSearch.user_prints_the_search_results(GoogleSearch.java:74)
+	at ✽.user prints the search results for 5 pages(file:///D:/SynechronBDD_15_03_2021/Eclipse_WS/actitime/src/test/java/feature/googleSearchUsingHooks.feature:16)
 ]]></failure>
 </testcase>
 </testsuite>

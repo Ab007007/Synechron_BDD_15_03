@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner" project="actitime" tests="5" started="5" failures="0" errors="1" ignored="0">
+  <testsuite name="runner.TestRunner" time="94.798">
+    <testsuite name="Create Mulitple customers" time="83.438">
+      <testcase name="Create new customer #1" classname="Create Mulitple customers" time="24.26"/>
+      <testcase name="Create new customer #2" classname="Create Mulitple customers" time="19.219"/>
+      <testcase name="Create new customer #3" classname="Create Mulitple customers" time="20.109"/>
+      <testcase name="Create new customer #4" classname="Create Mulitple customers" time="19.85"/>
+    </testsuite>
+    <testsuite name="Customer Creation #2" time="11.36">
+      <testcase name="Create new customer" classname="Customer Creation #2" time="11.36">
+        <error>io.cucumber.junit.UndefinedStepException: The step 'user reate multiple customer and validate success message' is undefined.
+You can implement this step using the snippet(s) below:
+
+@When("user reate multiple customer and validate success message")
+public void user_reate_multiple_customer_and_validate_success_message(io.cucumber.datatable.DataTable dataTable) {
+    // Write code here that turns the phrase above into concrete actions
+    // For automatic transformation, change DataTable to one of
+    // E, List&lt;E&gt;, List&lt;List&lt;E&gt;&gt;, List&lt;Map&lt;K,V&gt;&gt;, Map&lt;K,V&gt; or
+    // Map&lt;K, List&lt;V&gt;&gt;. E,K,V must be a String, Integer, Float,
+    // Double, Byte, Short, Long, BigInteger or BigDecimal.
+    //
+    // For other transformations you can register a DataTableType.
+    throw new io.cucumber.java.PendingException();
+}
+&#13;
+&#13;
+</error>
+      </testcase>
+    </testsuite>
+  </testsuite>
+</testrun>

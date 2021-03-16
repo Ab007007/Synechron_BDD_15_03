@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner" project="actitime" tests="1" started="1" failures="0" errors="1" ignored="0">
+  <testsuite name="runner.TestRunner" time="0.0">
+    <testsuite name="Printing Google Search results #2" time="0.0">
+      <testcase name="User Search and print the company realated search" classname="Printing Google Search results #2" time="0.0">
+        <error>io.cucumber.java.InvalidMethodException: You're not allowed to extend classes that define Step Definitions or hooks. class stepdefinition.GoogleSearch extends class stepdefinition.HooksDemo&#13;
+	at io.cucumber.java.InvalidMethodException.createInvalidMethodException(InvalidMethodException.java:16)&#13;
+	at io.cucumber.java.MethodScanner.validateMethod(MethodScanner.java:74)&#13;
+	at io.cucumber.java.MethodScanner.scan(MethodScanner.java:64)&#13;
+	at io.cucumber.java.MethodScanner.scan(MethodScanner.java:56)&#13;
+	at io.cucumber.java.MethodScanner.scan(MethodScanner.java:31)&#13;
+	at io.cucumber.java.JavaBackend.lambda$loadGlue$2(JavaBackend.java:40)&#13;
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184)&#13;
+	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1382)&#13;
+	at java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:580)&#13;
+	at java.util.stream.ReferencePipeline$7$1.accept(ReferencePipeline.java:270)&#13;
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)&#13;
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)&#13;
+	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:175)&#13;
+	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1382)&#13;
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:481)&#13;
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)&#13;
+	at java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151)&#13;
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174)&#13;
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)&#13;
+	at java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:418)&#13;
+	at io.cucumber.java.JavaBackend.loadGlue(JavaBackend.java:40)&#13;
+	at io.cucumber.core.runner.Runner.&lt;init&gt;(Runner.java:54)&#13;
+	at io.cucumber.core.runtime.ThreadLocalRunnerSupplier.createRunner(ThreadLocalRunnerSupplier.java:51)&#13;
+	at java.lang.ThreadLocal$SuppliedThreadLocal.initialValue(ThreadLocal.java:284)&#13;
+	at java.lang.ThreadLocal.setInitialValue(ThreadLocal.java:180)&#13;
+	at java.lang.ThreadLocal.get(ThreadLocal.java:170)&#13;
+	at io.cucumber.core.runtime.ThreadLocalRunnerSupplier.get(ThreadLocalRunnerSupplier.java:43)&#13;
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:148)&#13;
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:135)&#13;
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:27)&#13;
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)&#13;
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)&#13;
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)&#13;
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)&#13;
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)&#13;
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)&#13;
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)&#13;
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:200)&#13;
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:90)&#13;
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)&#13;
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)&#13;
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)&#13;
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)&#13;
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)&#13;
+	at io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:235)&#13;
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)&#13;
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)&#13;
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:89)&#13;
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:41)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:541)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:763)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:463)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:209)&#13;
+&#13;
+</error>
+      </testcase>
+    </testsuite>
+  </testsuite>
+</testrun>

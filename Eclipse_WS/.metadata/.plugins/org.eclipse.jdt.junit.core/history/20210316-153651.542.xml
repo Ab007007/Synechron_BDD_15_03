@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner" project="actitime" tests="1" started="1" failures="0" errors="1" ignored="0">
+  <testsuite name="runner.TestRunner" time="0.196">
+    <testsuite name="Printing Google Search results #2" time="0.196">
+      <testcase name="User Search and print the company realated search" classname="Printing Google Search results #2" time="0.196">
+        <error>io.cucumber.junit.UndefinedStepException: The step 'hookuser is on google page' and 2 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given("hookuser is on google page")
+public void hookuser_is_on_google_page() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("data table hookuser search company name and print the search results")
+public void data_table_hookuser_search_company_name_and_print_the_search_results(io.cucumber.datatable.DataTable dataTable) {
+    // Write code here that turns the phrase above into concrete actions
+    // For automatic transformation, change DataTable to one of
+    // E, List&lt;E&gt;, List&lt;List&lt;E&gt;&gt;, List&lt;Map&lt;K,V&gt;&gt;, Map&lt;K,V&gt; or
+    // Map&lt;K, List&lt;V&gt;&gt;. E,K,V must be a String, Integer, Float,
+    // Double, Byte, Short, Long, BigInteger or BigDecimal.
+    //
+    // For other transformations you can register a DataTableType.
+    throw new io.cucumber.java.PendingException();
+}
+@When("hookuser close the browser")
+public void hookuser_close_the_browser() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+&#13;
+&#13;
+</error>
+      </testcase>
+    </testsuite>
+  </testsuite>
+</testrun>

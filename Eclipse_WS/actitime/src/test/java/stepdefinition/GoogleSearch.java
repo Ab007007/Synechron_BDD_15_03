@@ -14,11 +14,20 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import io.github.bonigarcia.wdm.WebDriverManager;
+import junit.framework.Assert;
 
-public class GoogleSearch {
+public class GoogleSearch 
+{
 
-	WebDriver driver = null;
+	static WebDriver driver ;
 
+	/*
+	 * public GoogleSearch() {
+	 * 
+	 * }
+	 * 
+	 * public GoogleSearch(WebDriver driver) { this.driver = driver; }
+	 */
 	@Given("user is on google page")
 	public void user_is_on_google_page() {
 		WebDriverManager.chromedriver().setup();
@@ -62,7 +71,8 @@ public class GoogleSearch {
 			driver.findElement(By.linkText(String.valueOf(j))).click();
 		}
 
-		driver.close();
+		Assert.assertFalse(true);
+//		driver.close();
 	}
 
 	@When("data table user search company name and print the search results")
@@ -134,5 +144,14 @@ public class GoogleSearch {
 	public void close_the_browser() {
 		driver.close();
 	}
+
+	
+	
+	@Given("hookuser is on google page")
+	public void hookuser_is_on_google_page() {
+		driver.get("https://www.google.com/");
+	}
+	
+	
 
 }

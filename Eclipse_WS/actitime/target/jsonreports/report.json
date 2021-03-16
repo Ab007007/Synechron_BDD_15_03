@@ -1,136 +1,311 @@
 [
   {
-    "line": 2,
+    "line": 1,
     "elements": [
       {
-        "line": 4,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
+        "start_timestamp": "2021-03-16T10:30:49.741Z",
+        "before": [
           {
             "result": {
-              "duration": 11195000000,
+              "duration": 2726000000,
               "status": "passed"
             },
-            "line": 5,
-            "name": "user is logged in to the application",
             "match": {
-              "location": "stepdefinition.ActitimeSteps.user_is_logged_in_to_the_application()"
-            },
-            "keyword": "Given "
+              "location": "stepdefinition.HooksDemo.setup()"
+            }
           }
-        ]
-      },
-      {
-        "start_timestamp": "2021-03-16T07:54:36.807Z",
-        "line": 7,
-        "name": "Delete customer",
+        ],
+        "line": 4,
+        "name": "User Search and print the company realated search",
         "description": "",
-        "id": "customer-deletion;delete-customer",
+        "id": "printing-google-search-results;user-search-and-print-the-company-realated-search",
+        "after": [
+          {
+            "result": {
+              "duration": 2068000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinition.HooksDemo.teardown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 605000000,
+              "duration": 2032000000,
               "status": "passed"
             },
-            "line": 8,
-            "name": "user click on tasks and verify the task page",
-            "match": {
-              "location": "stepdefinition.ActitimeSteps.user_click_on_tasks_and_verify_the_task_page()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 3470000000,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "user search for a customer Customer-TestngDec-2020-3 and click on settings button",
-            "match": {
-              "arguments": [
-                {
-                  "val": "Customer-TestngDec-2020-3",
-                  "offset": 27
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepdefinition.HooksDemo.welcomeMSg()"
                 }
-              ],
-              "location": "stepdefinition.ActitimeSteps.user_search_for_a_customer_and_click_on_settings_button(java.lang.String)"
+              }
+            ],
+            "line": 5,
+            "name": "hookuser is on google page",
+            "match": {
+              "location": "stepdefinition.GoogleSearch.hookuser_is_on_google_page()"
             },
-            "keyword": "Then "
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepdefinition.HooksDemo.printLine()"
+                }
+              }
+            ],
+            "keyword": "Given "
           },
           {
             "result": {
-              "duration": 9516000000,
+              "duration": 7621000000,
               "status": "passed"
             },
-            "line": 10,
-            "name": "click on Actions and delete button",
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepdefinition.HooksDemo.welcomeMSg()"
+                }
+              }
+            ],
+            "line": 6,
+            "name": "data table user search company name and print the search results",
             "match": {
-              "location": "stepdefinition.ActitimeSteps.click_on_actions_and_delete_button()"
+              "location": "stepdefinition.GoogleSearch.data_table_user_search_company_name_and_print_the_search_results(io.cucumber.datatable.DataTable)"
             },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "passed"
-            },
-            "line": 11,
-            "name": "user will confirm by clicking on delete button",
-            "match": {
-              "location": "stepdefinition.ActitimeSteps.user_will_confirm_by_clicking_on_delete_button()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "error_message": "org.openqa.selenium.NoSuchElementException: Cannot locate an element using xpath\u003d//div[@class\u003d\u0027toast\u0027]\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027ARAVINDA-DELL-P\u0027, ip: \u0027192.168.56.1\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_201\u0027\nDriver info: driver.version: RemoteWebDriver\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat stepdefinition.ActitimeSteps.user_validate_the_success_message(ActitimeSteps.java:124)\r\n\tat ✽.user validate the success message(file:///D:/SynechronBDD_15_03_2021/Eclipse_WS/actitime/src/test/java/feature/deleteCustomer.feature:12)\r\n",
-              "duration": 5374000000,
-              "status": "failed"
-            },
-            "line": 12,
-            "name": "user validate the success message",
-            "match": {
-              "location": "stepdefinition.ActitimeSteps.user_validate_the_success_message()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 13,
-            "name": "logout of the application",
-            "match": {
-              "location": "stepdefinition.ActitimeSteps.logout_of_the_application()"
-            },
-            "keyword": "And "
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepdefinition.HooksDemo.printLine()"
+                }
+              }
+            ],
+            "rows": [
+              {
+                "cells": [
+                  "synechron"
+                ]
+              },
+              {
+                "cells": [
+                  "ibm"
+                ]
+              },
+              {
+                "cells": [
+                  "wipro"
+                ]
+              }
+            ],
+            "keyword": "When "
           }
         ],
         "tags": [
           {
-            "name": "@development"
+            "name": "@hooks"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-03-16T10:31:04.266Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1509000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinition.HooksDemo.setup()"
+            }
+          }
+        ],
+        "line": 12,
+        "name": "User Search and print the company realated search",
+        "description": "",
+        "id": "printing-google-search-results;user-search-and-print-the-company-realated-search",
+        "after": [
+          {
+            "result": {
+              "duration": 2433000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinition.HooksDemo.teardown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2588000000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepdefinition.HooksDemo.welcomeMSg()"
+                }
+              }
+            ],
+            "line": 13,
+            "name": "hookuser is on google page",
+            "match": {
+              "location": "stepdefinition.GoogleSearch.hookuser_is_on_google_page()"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepdefinition.HooksDemo.printLine()"
+                }
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 67000000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepdefinition.HooksDemo.welcomeMSg()"
+                }
+              }
+            ],
+            "line": 14,
+            "name": "guser enter IBMMMM",
+            "match": {
+              "arguments": [
+                {
+                  "val": "IBMMMM",
+                  "offset": 12
+                }
+              ],
+              "location": "stepdefinition.GoogleSearch.user_enter(java.lang.String)"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepdefinition.HooksDemo.printLine()"
+                }
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1455000000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepdefinition.HooksDemo.welcomeMSg()"
+                }
+              }
+            ],
+            "line": 15,
+            "name": "click on search button",
+            "match": {
+              "location": "stepdefinition.GoogleSearch.click_on_search_button()"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepdefinition.HooksDemo.printLine()"
+                }
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "junit.framework.AssertionFailedError\r\n\tat junit.framework.Assert.fail(Assert.java:55)\r\n\tat junit.framework.Assert.assertTrue(Assert.java:22)\r\n\tat junit.framework.Assert.assertFalse(Assert.java:39)\r\n\tat junit.framework.Assert.assertFalse(Assert.java:47)\r\n\tat stepdefinition.GoogleSearch.user_prints_the_search_results(GoogleSearch.java:74)\r\n\tat ✽.user prints the search results for 5 pages(file:///D:/SynechronBDD_15_03_2021/Eclipse_WS/actitime/src/test/java/feature/googleSearchUsingHooks.feature:16)\r\n",
+              "duration": 4926000000,
+              "status": "failed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepdefinition.HooksDemo.welcomeMSg()"
+                }
+              }
+            ],
+            "line": 16,
+            "name": "user prints the search results for 5 pages",
+            "match": {
+              "arguments": [
+                {
+                  "val": "5",
+                  "offset": 35
+                }
+              ],
+              "location": "stepdefinition.GoogleSearch.user_prints_the_search_results(java.lang.Integer)"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepdefinition.HooksDemo.printLine()"
+                }
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@hooks"
           }
         ]
       }
     ],
-    "name": "Customer Deletion",
+    "name": "Printing Google Search results",
     "description": "",
-    "id": "customer-deletion",
+    "id": "printing-google-search-results",
     "keyword": "Feature",
-    "uri": "file:src/test/java/feature/deleteCustomer.feature",
-    "tags": [
-      {
-        "name": "@development",
-        "type": "Tag",
-        "location": {
-          "line": 1,
-          "column": 1
-        }
-      }
-    ]
+    "uri": "file:src/test/java/feature/googleSearchUsingHooks.feature",
+    "tags": []
   }
 ]
