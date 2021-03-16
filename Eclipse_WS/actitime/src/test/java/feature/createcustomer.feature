@@ -21,5 +21,3 @@ Feature: Customer Creation
     Then application throws error message
     And user validate the error message and click on cancel
     And logout of the application
-    
-  
