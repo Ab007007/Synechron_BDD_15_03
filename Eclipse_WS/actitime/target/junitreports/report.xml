@@ -1,21 +1,24 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="44.193">
-<testcase classname="Printing Google Search results" name="User Search and print the company realated search" time="17.077">
-<system-out><![CDATA[Given user is on google page................................................passed
-When data table user search company name and print the search results.......passed
-And user close the browser..................................................passed
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="31.86">
+<testcase classname="Customer Creation" name="Create new customer" time="19.269">
+<system-out><![CDATA[Given user is logged in to the application..................................passed
+When user click on tasks and verify the task page...........................passed
+And user click on new customer button.......................................passed
+Then user enter "Syn-BDD-CustMar1" and "Syn-BDD-CustMar-Desc1"..............passed
+And click on create customer................................................passed
+Then user validate the success message......................................passed
+And logout of the application...............................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Printing Google Search results" name="User Search and print the company realated search using map" time="13.107">
-<system-out><![CDATA[Given user is on google page................................................passed
-When map data table user search company name and print the search results...passed
-And user close the browser..................................................passed
-]]></system-out>
-</testcase>
-<testcase classname="Printing Google Search results" name="User Search and print the company realated search using lists" time="13.836">
-<system-out><![CDATA[Given user is on google page................................................passed
-When lists data table user search company name and print the search results.passed
-And user close the browser..................................................passed
-]]></system-out>
+<testcase classname="Customer Creation" name="Re-Create existing customer" time="12.36">
+<failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[Given user is logged in to the application..................................passed
+When user click on tasks and verify the task page...........................passed
+And user click on new customer button.......................................passed
+Then user enter "Syn-BDD-CustMar1" and "Syn-BDD-CustMar-Desc1"..............passed
+And click on create customer................................................passed
+Then application throws error message.......................................undefined
+And user validate the error message and click on cancel.....................skipped
+And logout of the application...............................................skipped
+]]></failure>
 </testcase>
 </testsuite>

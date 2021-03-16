@@ -4,7 +4,19 @@ Feature: Customer Creation
     Given user is logged in to the application
     When user click on tasks and verify the task page
     And user click on new customer button
-    Then user enter customername and customerdesc
+    Then user enter Syn-BDD-CustMar1 and Syn-BDD-CustMar-Desc1
     And click on create customer
     Then user validate the success message
     And logout of the application
+
+    
+    Scenario: Re-Create existing customer
+    Given user is logged in to the application
+    When user click on tasks and verify the task page
+    And user click on new customer button
+    Then user enter Syn-BDD-CustMar1 and Syn-BDD-CustMar-Desc1
+    And click on create customer
+    Then application throws error message
+    And user validate the error message and click on cancel
+    And logout of the application
+    

@@ -3,208 +3,226 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2021-03-15T10:43:55.842Z",
+        "start_timestamp": "2021-03-16T04:19:35.597Z",
         "line": 3,
-        "name": "User Search and print the company realated search",
+        "name": "Create new customer",
         "description": "",
-        "id": "printing-google-search-results;user-search-and-print-the-company-realated-search",
+        "id": "customer-creation;create-new-customer",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 5431000000,
+              "duration": 9142000000,
               "status": "passed"
             },
             "line": 4,
-            "name": "user is on google page",
+            "name": "user is logged in to the application",
             "match": {
-              "location": "stepdefinition.GoogleSearch.user_is_on_google_page()"
+              "location": "stepdefinition.ActitimeSteps.user_is_logged_in_to_the_application()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 9492000000,
+              "duration": 622000000,
               "status": "passed"
             },
             "line": 5,
-            "name": "data table user search company name and print the search results",
+            "name": "user click on tasks and verify the task page",
             "match": {
-              "location": "stepdefinition.GoogleSearch.data_table_user_search_company_name_and_print_the_search_results(io.cucumber.datatable.DataTable)"
+              "location": "stepdefinition.ActitimeSteps.user_click_on_tasks_and_verify_the_task_page()"
             },
-            "rows": [
-              {
-                "cells": [
-                  "synechron"
-                ]
-              },
-              {
-                "cells": [
-                  "ibm"
-                ]
-              },
-              {
-                "cells": [
-                  "wipro"
-                ]
-              }
-            ],
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 2063000000,
+              "duration": 3150000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user click on new customer button",
+            "match": {
+              "location": "stepdefinition.ActitimeSteps.user_click_on_new_customer_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 212000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user enter \"Syn-BDD-CustMar1\" and \"Syn-BDD-CustMar-Desc1\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Syn-BDD-CustMar1\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"Syn-BDD-CustMar-Desc1\"",
+                  "offset": 34
+                }
+              ],
+              "location": "stepdefinition.ActitimeSteps.user_enter_customername_and_customerdesc(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 52000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "click on create customer",
+            "match": {
+              "location": "stepdefinition.ActitimeSteps.click_on_create_customer()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5769000000,
               "status": "passed"
             },
             "line": 9,
-            "name": "user close the browser",
+            "name": "user validate the success message",
             "match": {
-              "location": "stepdefinition.GoogleSearch.close_the_browser()"
+              "location": "stepdefinition.ActitimeSteps.user_validate_the_success_message()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 251000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "logout of the application",
+            "match": {
+              "location": "stepdefinition.ActitimeSteps.logout_of_the_application()"
             },
             "keyword": "And "
           }
         ]
       },
       {
-        "start_timestamp": "2021-03-15T10:44:12.928Z",
-        "line": 11,
-        "name": "User Search and print the company realated search using map",
+        "start_timestamp": "2021-03-16T04:19:54.919Z",
+        "line": 13,
+        "name": "Re-Create existing customer",
         "description": "",
-        "id": "printing-google-search-results;user-search-and-print-the-company-realated-search-using-map",
+        "id": "customer-creation;re-create-existing-customer",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 4014000000,
+              "duration": 8380000000,
               "status": "passed"
             },
-            "line": 12,
-            "name": "user is on google page",
+            "line": 14,
+            "name": "user is logged in to the application",
             "match": {
-              "location": "stepdefinition.GoogleSearch.user_is_on_google_page()"
+              "location": "stepdefinition.ActitimeSteps.user_is_logged_in_to_the_application()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 7019000000,
+              "duration": 567000000,
               "status": "passed"
             },
-            "line": 13,
-            "name": "map data table user search company name and print the search results",
+            "line": 15,
+            "name": "user click on tasks and verify the task page",
             "match": {
-              "location": "stepdefinition.GoogleSearch.map_data_table_user_search_company_name_and_print_the_search_results(io.cucumber.datatable.DataTable)"
+              "location": "stepdefinition.ActitimeSteps.user_click_on_tasks_and_verify_the_task_page()"
             },
-            "rows": [
-              {
-                "cells": [
-                  "company"
-                ]
-              },
-              {
-                "cells": [
-                  "synechron"
-                ]
-              },
-              {
-                "cells": [
-                  "ibm"
-                ]
-              },
-              {
-                "cells": [
-                  "wipro"
-                ]
-              }
-            ],
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 2072000000,
+              "duration": 3146000000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "user click on new customer button",
+            "match": {
+              "location": "stepdefinition.ActitimeSteps.user_click_on_new_customer_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 203000000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "user enter \"Syn-BDD-CustMar1\" and \"Syn-BDD-CustMar-Desc1\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Syn-BDD-CustMar1\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"Syn-BDD-CustMar-Desc1\"",
+                  "offset": 34
+                }
+              ],
+              "location": "stepdefinition.ActitimeSteps.user_enter_customername_and_customerdesc(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 56000000,
               "status": "passed"
             },
             "line": 18,
-            "name": "user close the browser",
+            "name": "click on create customer",
             "match": {
-              "location": "stepdefinition.GoogleSearch.close_the_browser()"
+              "location": "stepdefinition.ActitimeSteps.click_on_create_customer()"
             },
             "keyword": "And "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2021-03-15T10:44:26.049Z",
-        "line": 20,
-        "name": "User Search and print the company realated search using lists",
-        "description": "",
-        "id": "printing-google-search-results;user-search-and-print-the-company-realated-search-using-lists",
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
+          },
           {
             "result": {
-              "duration": 3829000000,
-              "status": "passed"
+              "status": "undefined"
+            },
+            "line": 19,
+            "name": "application throws error message",
+            "match": {},
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 20,
+            "name": "user validate the error message and click on cancel",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
             },
             "line": 21,
-            "name": "user is on google page",
+            "name": "logout of the application",
             "match": {
-              "location": "stepdefinition.GoogleSearch.user_is_on_google_page()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 7937000000,
-              "status": "passed"
-            },
-            "line": 22,
-            "name": "lists data table user search company name and print the search results",
-            "match": {
-              "location": "stepdefinition.GoogleSearch.lists_data_table_user_search_company_name_and_print_the_search_results(io.cucumber.datatable.DataTable)"
-            },
-            "rows": [
-              {
-                "cells": [
-                  "synechron"
-                ]
-              },
-              {
-                "cells": [
-                  "ibm"
-                ]
-              },
-              {
-                "cells": [
-                  "wipro"
-                ]
-              }
-            ],
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 2067000000,
-              "status": "passed"
-            },
-            "line": 26,
-            "name": "user close the browser",
-            "match": {
-              "location": "stepdefinition.GoogleSearch.close_the_browser()"
+              "location": "stepdefinition.ActitimeSteps.logout_of_the_application()"
             },
             "keyword": "And "
           }
         ]
       }
     ],
-    "name": "Printing Google Search results",
+    "name": "Customer Creation",
     "description": "",
-    "id": "printing-google-search-results",
+    "id": "customer-creation",
     "keyword": "Feature",
-    "uri": "file:src/test/java/feature/googleSearchUsingDT.feature",
+    "uri": "file:src/test/java/feature/createcustomer.feature",
     "tags": []
   }
 ]
