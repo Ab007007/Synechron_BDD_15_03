@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner" project="actitime" tests="3" started="3" failures="0" errors="0" ignored="0">
+  <testsuite name="runner.TestRunner" time="45.291">
+    <testsuite name="Printing Google Search results #2" time="45.291">
+      <testcase name="User Search for Synechron #1" classname="Printing Google Search results #2" time="13.46"/>
+      <testcase name="User Search for Synechron #2" classname="Printing Google Search results #2" time="15.816"/>
+      <testcase name="User Search for Synechron #3" classname="Printing Google Search results #2" time="16.015"/>
+    </testsuite>
+  </testsuite>
+</testrun>

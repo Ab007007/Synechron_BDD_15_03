@@ -1,139 +1,43 @@
 [
   {
-    "line": 1,
+    "line": 2,
     "elements": [
       {
-        "start_timestamp": "2021-03-16T04:19:35.597Z",
-        "line": 3,
-        "name": "Create new customer",
+        "line": 4,
+        "name": "",
         "description": "",
-        "id": "customer-creation;create-new-customer",
-        "type": "scenario",
-        "keyword": "Scenario",
+        "type": "background",
+        "keyword": "Background",
         "steps": [
           {
             "result": {
-              "duration": 9142000000,
+              "duration": 11195000000,
               "status": "passed"
             },
-            "line": 4,
+            "line": 5,
             "name": "user is logged in to the application",
             "match": {
               "location": "stepdefinition.ActitimeSteps.user_is_logged_in_to_the_application()"
             },
             "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 622000000,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "user click on tasks and verify the task page",
-            "match": {
-              "location": "stepdefinition.ActitimeSteps.user_click_on_tasks_and_verify_the_task_page()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 3150000000,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "user click on new customer button",
-            "match": {
-              "location": "stepdefinition.ActitimeSteps.user_click_on_new_customer_button()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 212000000,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "user enter \"Syn-BDD-CustMar1\" and \"Syn-BDD-CustMar-Desc1\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Syn-BDD-CustMar1\"",
-                  "offset": 11
-                },
-                {
-                  "val": "\"Syn-BDD-CustMar-Desc1\"",
-                  "offset": 34
-                }
-              ],
-              "location": "stepdefinition.ActitimeSteps.user_enter_customername_and_customerdesc(java.lang.String,java.lang.String)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 52000000,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "click on create customer",
-            "match": {
-              "location": "stepdefinition.ActitimeSteps.click_on_create_customer()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 5769000000,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "user validate the success message",
-            "match": {
-              "location": "stepdefinition.ActitimeSteps.user_validate_the_success_message()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 251000000,
-              "status": "passed"
-            },
-            "line": 10,
-            "name": "logout of the application",
-            "match": {
-              "location": "stepdefinition.ActitimeSteps.logout_of_the_application()"
-            },
-            "keyword": "And "
           }
         ]
       },
       {
-        "start_timestamp": "2021-03-16T04:19:54.919Z",
-        "line": 13,
-        "name": "Re-Create existing customer",
+        "start_timestamp": "2021-03-16T07:54:36.807Z",
+        "line": 7,
+        "name": "Delete customer",
         "description": "",
-        "id": "customer-creation;re-create-existing-customer",
+        "id": "customer-deletion;delete-customer",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 8380000000,
+              "duration": 605000000,
               "status": "passed"
             },
-            "line": 14,
-            "name": "user is logged in to the application",
-            "match": {
-              "location": "stepdefinition.ActitimeSteps.user_is_logged_in_to_the_application()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 567000000,
-              "status": "passed"
-            },
-            "line": 15,
+            "line": 8,
             "name": "user click on tasks and verify the task page",
             "match": {
               "location": "stepdefinition.ActitimeSteps.user_click_on_tasks_and_verify_the_task_page()"
@@ -142,87 +46,91 @@
           },
           {
             "result": {
-              "duration": 3146000000,
+              "duration": 3470000000,
               "status": "passed"
             },
-            "line": 16,
-            "name": "user click on new customer button",
-            "match": {
-              "location": "stepdefinition.ActitimeSteps.user_click_on_new_customer_button()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 203000000,
-              "status": "passed"
-            },
-            "line": 17,
-            "name": "user enter \"Syn-BDD-CustMar1\" and \"Syn-BDD-CustMar-Desc1\"",
+            "line": 9,
+            "name": "user search for a customer Customer-TestngDec-2020-3 and click on settings button",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Syn-BDD-CustMar1\"",
-                  "offset": 11
-                },
-                {
-                  "val": "\"Syn-BDD-CustMar-Desc1\"",
-                  "offset": 34
+                  "val": "Customer-TestngDec-2020-3",
+                  "offset": 27
                 }
               ],
-              "location": "stepdefinition.ActitimeSteps.user_enter_customername_and_customerdesc(java.lang.String,java.lang.String)"
+              "location": "stepdefinition.ActitimeSteps.user_search_for_a_customer_and_click_on_settings_button(java.lang.String)"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 56000000,
+              "duration": 9516000000,
               "status": "passed"
             },
-            "line": 18,
-            "name": "click on create customer",
+            "line": 10,
+            "name": "click on Actions and delete button",
             "match": {
-              "location": "stepdefinition.ActitimeSteps.click_on_create_customer()"
+              "location": "stepdefinition.ActitimeSteps.click_on_actions_and_delete_button()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "status": "passed"
             },
-            "line": 19,
-            "name": "application throws error message",
-            "match": {},
+            "line": 11,
+            "name": "user will confirm by clicking on delete button",
+            "match": {
+              "location": "stepdefinition.ActitimeSteps.user_will_confirm_by_clicking_on_delete_button()"
+            },
             "keyword": "Then "
           },
           {
             "result": {
-              "status": "skipped"
+              "error_message": "org.openqa.selenium.NoSuchElementException: Cannot locate an element using xpath\u003d//div[@class\u003d\u0027toast\u0027]\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027ARAVINDA-DELL-P\u0027, ip: \u0027192.168.56.1\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_201\u0027\nDriver info: driver.version: RemoteWebDriver\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat stepdefinition.ActitimeSteps.user_validate_the_success_message(ActitimeSteps.java:124)\r\n\tat ✽.user validate the success message(file:///D:/SynechronBDD_15_03_2021/Eclipse_WS/actitime/src/test/java/feature/deleteCustomer.feature:12)\r\n",
+              "duration": 5374000000,
+              "status": "failed"
             },
-            "line": 20,
-            "name": "user validate the error message and click on cancel",
-            "match": {},
+            "line": 12,
+            "name": "user validate the success message",
+            "match": {
+              "location": "stepdefinition.ActitimeSteps.user_validate_the_success_message()"
+            },
             "keyword": "And "
           },
           {
             "result": {
               "status": "skipped"
             },
-            "line": 21,
+            "line": 13,
             "name": "logout of the application",
             "match": {
               "location": "stepdefinition.ActitimeSteps.logout_of_the_application()"
             },
             "keyword": "And "
           }
+        ],
+        "tags": [
+          {
+            "name": "@development"
+          }
         ]
       }
     ],
-    "name": "Customer Creation",
+    "name": "Customer Deletion",
     "description": "",
-    "id": "customer-creation",
+    "id": "customer-deletion",
     "keyword": "Feature",
-    "uri": "file:src/test/java/feature/createcustomer.feature",
-    "tags": []
+    "uri": "file:src/test/java/feature/deleteCustomer.feature",
+    "tags": [
+      {
+        "name": "@development",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
   }
 ]

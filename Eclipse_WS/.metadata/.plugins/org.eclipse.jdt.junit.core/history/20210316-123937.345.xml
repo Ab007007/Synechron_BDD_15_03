@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner" project="actitime" tests="1" started="1" failures="0" errors="1" ignored="0">
+  <testsuite name="runner.TestRunner" time="0.202">
+    <testsuite name="Customer Deletion" time="0.202">
+      <testcase name="Delete customer" classname="Customer Deletion" time="0.202">
+        <error>io.cucumber.junit.UndefinedStepException: The step 'user search for a customer "C3" and click on settings button' and 2 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Then("user search for a customer {string} and click on settings button")
+public void user_search_for_a_customer_and_click_on_settings_button(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("click on Actions and delete button")
+public void click_on_actions_and_delete_button() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("user will confirm by clicking on delete button")
+public void user_will_confirm_by_clicking_on_delete_button() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+&#13;
+&#13;
+</error>
+      </testcase>
+    </testsuite>
+  </testsuite>
+</testrun>

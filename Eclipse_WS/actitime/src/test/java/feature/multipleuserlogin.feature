@@ -1,5 +1,6 @@
 Feature: Login Functionality
 
+	@actitime
   Scenario Outline: Successful Login
     Given user is on login page
     When user enter valid <username> and <password>

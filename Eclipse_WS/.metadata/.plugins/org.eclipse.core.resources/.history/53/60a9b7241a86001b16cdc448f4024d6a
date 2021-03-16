@@ -1,0 +1,17 @@
+Feature: Tags Demo
+
+  Scenario: Demonstrate tags
+    Given user is testing app
+    And he continue to test
+
+  Scenario: Demonstrate tags
+    Given user is testing app
+    And he continue to test
+
+  Scenario: Demonstrate tags
+    Given user is testing app
+    And he continue to test
+
+  Scenario: Demonstrate tags
+    Given user is testing app
+    And he continue to test

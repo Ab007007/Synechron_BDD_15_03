@@ -1,0 +1,15 @@
+@regression
+Feature: Printing Google Search results
+
+	@google
+  Scenario Outline: User Search for Synechron
+    Given user is on google page
+    When guser enter <company>
+    And click on search button
+    Then user prints the search results for 5 pages
+
+    Examples: 
+      | company   |
+      | synechron |
+      | IBM       |
+      | Wipro     |

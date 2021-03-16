@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner" project="actitime" tests="2" started="2" failures="1" errors="0" ignored="0">
+  <testsuite name="runner.TestRunner" time="33.421">
+    <testsuite name="Customer Creation" time="33.421">
+      <testcase name="Create new customer" classname="Customer Creation" time="20.875"/>
+      <testcase name="Re-Create existing customer" classname="Customer Creation" time="12.546">
+        <failure>
+          <expected/>
+          <actual>Customer with the specified name already exists</actual>org.junit.ComparisonFailure: expected:&lt;[]&gt; but was:&lt;[Customer with the specified name already exists]&gt;&#13;
+	at org.junit.Assert.assertEquals(Assert.java:117)&#13;
+	at org.junit.Assert.assertEquals(Assert.java:146)&#13;
+	at stepdefinition.ActitimeSteps.application_throws_error_message(ActitimeSteps.java:135)&#13;
+	at ✽.application throws error message(file:///D:/SynechronBDD_15_03_2021/Eclipse_WS/actitime/src/test/java/feature/createcustomer.feature:19)&#13;
+&#13;
+</failure>
+      </testcase>
+    </testsuite>
+  </testsuite>
+</testrun>

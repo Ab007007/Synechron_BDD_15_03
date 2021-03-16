@@ -1,7 +1,10 @@
 Feature: Customer Creation
 
-  Scenario: Create new customer
+  Background: 
     Given user is logged in to the application
+
+  @actitime
+  Scenario: Create new customer
     When user click on tasks and verify the task page
     And user click on new customer button
     Then user enter Syn-BDD-CustMar1 and Syn-BDD-CustMar-Desc1
@@ -9,9 +12,8 @@ Feature: Customer Creation
     Then user validate the success message
     And logout of the application
 
-    
-    Scenario: Re-Create existing customer
-    Given user is logged in to the application
+  @actitime
+  Scenario: Re-Create existing customer
     When user click on tasks and verify the task page
     And user click on new customer button
     Then user enter Syn-BDD-CustMar1 and Syn-BDD-CustMar-Desc1
@@ -20,3 +22,4 @@ Feature: Customer Creation
     And user validate the error message and click on cancel
     And logout of the application
     
+  

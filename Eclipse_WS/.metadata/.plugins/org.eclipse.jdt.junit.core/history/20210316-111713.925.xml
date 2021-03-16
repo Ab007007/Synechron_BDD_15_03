@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner" project="actitime" tests="1" started="1" failures="0" errors="1" ignored="0">
+  <testsuite name="runner.TestRunner" time="0.168">
+    <testsuite name="Tags Demo" time="0.168">
+      <testcase name="Demonstrate tags-1" classname="Tags Demo" time="0.168">
+        <error>io.cucumber.junit.UndefinedStepException: The step 'user is testing app' and 1 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given("user is testing app")
+public void user_is_testing_app() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Given("he continue to test")
+public void he_continue_to_test() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+&#13;
+&#13;
+</error>
+      </testcase>
+    </testsuite>
+  </testsuite>
+</testrun>

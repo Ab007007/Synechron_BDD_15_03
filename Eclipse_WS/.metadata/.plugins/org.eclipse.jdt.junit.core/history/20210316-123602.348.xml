@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner" project="actitime" tests="1" started="1" failures="0" errors="1" ignored="0">
+  <testsuite name="runner.TestRunner" time="11.669">
+    <testsuite name="Customer Deletion" time="11.669">
+      <testcase name="Delete customer" classname="Customer Deletion" time="11.669">
+        <error>io.cucumber.junit.UndefinedStepException: The step 'click on delete button' and 1 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@When("click on delete button")
+public void click_on_delete_button() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("user will confirm by clicking on delete button")
+public void user_will_confirm_by_clicking_on_delete_button() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+&#13;
+&#13;
+</error>
+      </testcase>
+    </testsuite>
+  </testsuite>
+</testrun>
