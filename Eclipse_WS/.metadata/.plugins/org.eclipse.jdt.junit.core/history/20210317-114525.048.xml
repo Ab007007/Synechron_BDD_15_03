@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner" project="actitime" tests="1" started="1" failures="0" errors="1" ignored="0">
+  <testsuite name="runner.TestRunner" time="0.245">
+    <testsuite name="Login Functionality #2" time="0.245">
+      <testcase name="Successful Login" classname="Login Functionality #2" time="0.245">
+        <error>io.cucumber.junit.UndefinedStepException: The step 'pomuser will logout and close browser' is undefined.
+You can implement this step using the snippet(s) below:
+
+@Then("pomuser will logout and close browser")
+public void pomuser_will_logout_and_close_browser() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+&#13;
+&#13;
+</error>
+      </testcase>
+    </testsuite>
+  </testsuite>
+</testrun>

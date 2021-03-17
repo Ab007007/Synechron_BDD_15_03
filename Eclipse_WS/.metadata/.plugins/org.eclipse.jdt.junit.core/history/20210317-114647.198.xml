@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner" project="actitime" tests="1" started="1" failures="0" errors="1" ignored="0">
+  <testsuite name="runner.TestRunner" time="11.704">
+    <testsuite name="Login Functionality #2" time="11.704">
+      <testcase name="Successful Login" classname="Login Functionality #2" time="11.704">
+        <error>java.lang.NullPointerException&#13;
+	at stepdefinition.ActitimeSteps.teardown(ActitimeSteps.java:235)&#13;
+&#13;
+</error>
+      </testcase>
+    </testsuite>
+  </testsuite>
+</testrun>

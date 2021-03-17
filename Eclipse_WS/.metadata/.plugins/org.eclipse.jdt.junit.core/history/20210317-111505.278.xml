@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner" project="actitime" tests="1" started="1" failures="0" errors="2" ignored="0">
+  <testsuite name="runner.TestRunner" time="0.195">
+    <testsuite name="Login Functionality #2" time="0.195">
+      <testcase name="Successful Login" classname="Login Functionality #2" time="0.195">
+        <error>io.cucumber.junit.UndefinedStepException: The step 'pomuser is on login page' and 3 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given("pomuser is on login page")
+public void pomuser_is_on_login_page() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("pomuser enter valid username and password")
+public void pomuser_enter_valid_username_and_password() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("pomuser click on login Button")
+public void pomuser_click_on_login_button() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("pomuser will be landed in dashboard page")
+public void pomuser_will_be_landed_in_dashboard_page() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+&#13;
+&#13;
+java.lang.NullPointerException&#13;
+	at stepdefinition.ActitimeSteps.teardown(ActitimeSteps.java:235)&#13;
+&#13;
+</error>
+      </testcase>
+    </testsuite>
+  </testsuite>
+</testrun>

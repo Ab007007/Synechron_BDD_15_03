@@ -3,7 +3,18 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2021-03-17T05:45:05.449Z",
+        "start_timestamp": "2021-03-17T06:31:46.894Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2818000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinition.AcititmeTests.setup()"
+            }
+          }
+        ],
         "line": 4,
         "name": "Successful Login",
         "description": "",
@@ -11,12 +22,11 @@
         "after": [
           {
             "result": {
-              "error_message": "java.lang.NullPointerException\r\n\tat stepdefinition.ActitimeSteps.teardown(ActitimeSteps.java:235)\r\n",
-              "duration": 2000000,
-              "status": "failed"
+              "duration": 295000000,
+              "status": "passed"
             },
             "match": {
-              "location": "stepdefinition.ActitimeSteps.teardown(io.cucumber.java.Scenario)"
+              "location": "stepdefinition.AcititmeTests.saveReports()"
             }
           }
         ],
@@ -25,12 +35,13 @@
         "steps": [
           {
             "result": {
-              "status": "undefined"
+              "duration": 3056000000,
+              "status": "passed"
             },
             "before": [
               {
                 "result": {
-                  "duration": 2000000,
+                  "duration": 1000000,
                   "status": "passed"
                 },
                 "match": {
@@ -40,10 +51,13 @@
             ],
             "line": 5,
             "name": "pomuser is on login page",
-            "match": {},
+            "match": {
+              "location": "stepdefinition.AcititmeTests.pomuser_is_on_login_page()"
+            },
             "after": [
               {
                 "result": {
+                  "duration": 1000000,
                   "status": "passed"
                 },
                 "match": {
@@ -55,12 +69,13 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 132000000,
+              "status": "passed"
             },
             "before": [
               {
                 "result": {
-                  "status": "skipped"
+                  "status": "passed"
                 },
                 "match": {
                   "location": "stepdefinition.HooksDemo.welcomeMSg()"
@@ -69,11 +84,14 @@
             ],
             "line": 6,
             "name": "pomuser enter valid username and password",
-            "match": {},
+            "match": {
+              "location": "stepdefinition.AcititmeTests.pomuser_enter_valid_username_and_password()"
+            },
             "after": [
               {
                 "result": {
-                  "status": "skipped"
+                  "duration": 1000000,
+                  "status": "passed"
                 },
                 "match": {
                   "location": "stepdefinition.HooksDemo.printLine()"
@@ -84,12 +102,14 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 5058000000,
+              "status": "passed"
             },
             "before": [
               {
                 "result": {
-                  "status": "skipped"
+                  "duration": 1000000,
+                  "status": "passed"
                 },
                 "match": {
                   "location": "stepdefinition.HooksDemo.welcomeMSg()"
@@ -98,11 +118,13 @@
             ],
             "line": 7,
             "name": "pomuser click on login Button",
-            "match": {},
+            "match": {
+              "location": "stepdefinition.AcititmeTests.pomuser_click_on_login_button()"
+            },
             "after": [
               {
                 "result": {
-                  "status": "skipped"
+                  "status": "passed"
                 },
                 "match": {
                   "location": "stepdefinition.HooksDemo.printLine()"
@@ -113,12 +135,14 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 7000000,
+              "status": "passed"
             },
             "before": [
               {
                 "result": {
-                  "status": "skipped"
+                  "duration": 1000000,
+                  "status": "passed"
                 },
                 "match": {
                   "location": "stepdefinition.HooksDemo.welcomeMSg()"
@@ -127,11 +151,13 @@
             ],
             "line": 8,
             "name": "pomuser will be landed in dashboard page",
-            "match": {},
+            "match": {
+              "location": "stepdefinition.AcititmeTests.pomuser_will_be_landed_in_dashboard_page()"
+            },
             "after": [
               {
                 "result": {
-                  "status": "skipped"
+                  "status": "passed"
                 },
                 "match": {
                   "location": "stepdefinition.HooksDemo.printLine()"
@@ -139,6 +165,39 @@
               }
             ],
             "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 298000000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepdefinition.HooksDemo.welcomeMSg()"
+                }
+              }
+            ],
+            "line": 9,
+            "name": "pomuser will logout and close browser",
+            "match": {
+              "location": "stepdefinition.AcititmeTests.pomuser_will_logout_and_close_browser()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 1000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepdefinition.HooksDemo.printLine()"
+                }
+              }
+            ],
+            "keyword": "And "
           }
         ],
         "tags": [
