@@ -1,31 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="2" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="21.561">
-<testcase classname="Login Functionality" name="Successful Login" time="11.485">
-<failure message="expected:&lt;actiTIME - [Enter Time-Track]&gt; but was:&lt;actiTIME - [Login]&gt;" type="org.junit.ComparisonFailure"><![CDATA[Given user is on login page.................................................passed
-When loginuser enter valid username and password............................passed
-And click on login Button...................................................passed
-Then user will be landed in dashboard page..................................failed
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="0.313">
+<testcase classname="Login Functionality" name="Successful Login" time="0.073">
+<failure message="" type="java.lang.NullPointerException"><![CDATA[Given pomuser is on login page..............................................undefined
+When pomuser enter valid username and password..............................skipped
+And pomuser click on login Button...........................................skipped
+Then pomuser will be landed in dashboard page...............................skipped
 
 StackTrace:
-org.junit.ComparisonFailure: expected:<actiTIME - [Enter Time-Track]> but was:<actiTIME - [Login]>
-	at org.junit.Assert.assertEquals(Assert.java:117)
-	at org.junit.Assert.assertEquals(Assert.java:146)
-	at stepdefinition.ActitimeSteps.user_will_be_landed_in_dashboard_page(ActitimeSteps.java:61)
-	at ✽.user will be landed in dashboard page(file:///D:/SynechronBDD_15_03_2021/Eclipse_WS/actitime/src/test/java/feature/login.feature:8)
-]]></failure>
-</testcase>
-<testcase classname="Login Functionality" name="UnSuccessful Login" time="9.786">
-<failure message="expected:&lt;actiTIME - [Enter Time-Track]&gt; but was:&lt;actiTIME - [Login]&gt;" type="org.junit.ComparisonFailure"><![CDATA[Given user is on login page.................................................passed
-When loginuser enter invalid username and password..........................passed
-And click on login Button...................................................passed
-Then user will be landed in dashboard page..................................failed
-
-StackTrace:
-org.junit.ComparisonFailure: expected:<actiTIME - [Enter Time-Track]> but was:<actiTIME - [Login]>
-	at org.junit.Assert.assertEquals(Assert.java:117)
-	at org.junit.Assert.assertEquals(Assert.java:146)
-	at stepdefinition.ActitimeSteps.user_will_be_landed_in_dashboard_page(ActitimeSteps.java:61)
-	at ✽.user will be landed in dashboard page(file:///D:/SynechronBDD_15_03_2021/Eclipse_WS/actitime/src/test/java/feature/login.feature:15)
+java.lang.NullPointerException
+	at stepdefinition.ActitimeSteps.teardown(ActitimeSteps.java:235)
 ]]></failure>
 </testcase>
 </testsuite>

@@ -3,7 +3,7 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2021-03-17T04:34:27.882Z",
+        "start_timestamp": "2021-03-17T05:45:05.449Z",
         "line": 4,
         "name": "Successful Login",
         "description": "",
@@ -11,8 +11,9 @@
         "after": [
           {
             "result": {
-              "duration": 344000000,
-              "status": "passed"
+              "error_message": "java.lang.NullPointerException\r\n\tat stepdefinition.ActitimeSteps.teardown(ActitimeSteps.java:235)\r\n",
+              "duration": 2000000,
+              "status": "failed"
             },
             "match": {
               "location": "stepdefinition.ActitimeSteps.teardown(io.cucumber.java.Scenario)"
@@ -24,13 +25,12 @@
         "steps": [
           {
             "result": {
-              "duration": 5836000000,
-              "status": "passed"
+              "status": "undefined"
             },
             "before": [
               {
                 "result": {
-                  "duration": 3000000,
+                  "duration": 2000000,
                   "status": "passed"
                 },
                 "match": {
@@ -39,10 +39,8 @@
               }
             ],
             "line": 5,
-            "name": "user is on login page",
-            "match": {
-              "location": "stepdefinition.ActitimeSteps.user_is_on_login_page()"
-            },
+            "name": "pomuser is on login page",
+            "match": {},
             "after": [
               {
                 "result": {
@@ -57,13 +55,12 @@
           },
           {
             "result": {
-              "duration": 145000000,
-              "status": "passed"
+              "status": "skipped"
             },
             "before": [
               {
                 "result": {
-                  "status": "passed"
+                  "status": "skipped"
                 },
                 "match": {
                   "location": "stepdefinition.HooksDemo.welcomeMSg()"
@@ -71,24 +68,12 @@
               }
             ],
             "line": 6,
-            "name": "loginuser enter valid username and password",
-            "match": {
-              "arguments": [
-                {
-                  "val": "username",
-                  "offset": 22
-                },
-                {
-                  "val": "password",
-                  "offset": 35
-                }
-              ],
-              "location": "stepdefinition.ActitimeSteps.user_enter_valid_username_and_password(java.lang.String,java.lang.String)"
-            },
+            "name": "pomuser enter valid username and password",
+            "match": {},
             "after": [
               {
                 "result": {
-                  "status": "passed"
+                  "status": "skipped"
                 },
                 "match": {
                   "location": "stepdefinition.HooksDemo.printLine()"
@@ -99,13 +84,12 @@
           },
           {
             "result": {
-              "duration": 5056000000,
-              "status": "passed"
+              "status": "skipped"
             },
             "before": [
               {
                 "result": {
-                  "status": "passed"
+                  "status": "skipped"
                 },
                 "match": {
                   "location": "stepdefinition.HooksDemo.welcomeMSg()"
@@ -113,15 +97,12 @@
               }
             ],
             "line": 7,
-            "name": "click on login Button",
-            "match": {
-              "location": "stepdefinition.ActitimeSteps.click_on_login_button()"
-            },
+            "name": "pomuser click on login Button",
+            "match": {},
             "after": [
               {
                 "result": {
-                  "duration": 1000000,
-                  "status": "passed"
+                  "status": "skipped"
                 },
                 "match": {
                   "location": "stepdefinition.HooksDemo.printLine()"
@@ -132,14 +113,12 @@
           },
           {
             "result": {
-              "error_message": "org.junit.ComparisonFailure: expected:\u003cactiTIME - [Enter Time-Track]\u003e but was:\u003cactiTIME - [Login]\u003e\r\n\tat org.junit.Assert.assertEquals(Assert.java:117)\r\n\tat org.junit.Assert.assertEquals(Assert.java:146)\r\n\tat stepdefinition.ActitimeSteps.user_will_be_landed_in_dashboard_page(ActitimeSteps.java:61)\r\n\tat ✽.user will be landed in dashboard page(file:///D:/SynechronBDD_15_03_2021/Eclipse_WS/actitime/src/test/java/feature/login.feature:8)\r\n",
-              "duration": 8000000,
-              "status": "failed"
+              "status": "skipped"
             },
             "before": [
               {
                 "result": {
-                  "status": "passed"
+                  "status": "skipped"
                 },
                 "match": {
                   "location": "stepdefinition.HooksDemo.welcomeMSg()"
@@ -147,14 +126,12 @@
               }
             ],
             "line": 8,
-            "name": "user will be landed in dashboard page",
-            "match": {
-              "location": "stepdefinition.ActitimeSteps.user_will_be_landed_in_dashboard_page()"
-            },
+            "name": "pomuser will be landed in dashboard page",
+            "match": {},
             "after": [
               {
                 "result": {
-                  "status": "passed"
+                  "status": "skipped"
                 },
                 "match": {
                   "location": "stepdefinition.HooksDemo.printLine()"
@@ -169,175 +146,7 @@
             "name": "@regression"
           },
           {
-            "name": "@actitime"
-          },
-          {
-            "name": "@testss"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2021-03-17T04:34:39.395Z",
-        "line": 11,
-        "name": "UnSuccessful Login",
-        "description": "",
-        "id": "login-functionality;unsuccessful-login",
-        "after": [
-          {
-            "result": {
-              "duration": 562000000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "stepdefinition.ActitimeSteps.teardown(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 4018000000,
-              "status": "passed"
-            },
-            "before": [
-              {
-                "result": {
-                  "duration": 1000000,
-                  "status": "passed"
-                },
-                "match": {
-                  "location": "stepdefinition.HooksDemo.welcomeMSg()"
-                }
-              }
-            ],
-            "line": 12,
-            "name": "user is on login page",
-            "match": {
-              "location": "stepdefinition.ActitimeSteps.user_is_on_login_page()"
-            },
-            "after": [
-              {
-                "result": {
-                  "duration": 1000000,
-                  "status": "passed"
-                },
-                "match": {
-                  "location": "stepdefinition.HooksDemo.printLine()"
-                }
-              }
-            ],
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 128000000,
-              "status": "passed"
-            },
-            "before": [
-              {
-                "result": {
-                  "duration": 1000000,
-                  "status": "passed"
-                },
-                "match": {
-                  "location": "stepdefinition.HooksDemo.welcomeMSg()"
-                }
-              }
-            ],
-            "line": 13,
-            "name": "loginuser enter invalid username and password",
-            "match": {
-              "location": "stepdefinition.ActitimeSteps.user_enter_invalid_username_and_password()"
-            },
-            "after": [
-              {
-                "result": {
-                  "status": "passed"
-                },
-                "match": {
-                  "location": "stepdefinition.HooksDemo.printLine()"
-                }
-              }
-            ],
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 5066000000,
-              "status": "passed"
-            },
-            "before": [
-              {
-                "result": {
-                  "status": "passed"
-                },
-                "match": {
-                  "location": "stepdefinition.HooksDemo.welcomeMSg()"
-                }
-              }
-            ],
-            "line": 14,
-            "name": "click on login Button",
-            "match": {
-              "location": "stepdefinition.ActitimeSteps.click_on_login_button()"
-            },
-            "after": [
-              {
-                "result": {
-                  "status": "passed"
-                },
-                "match": {
-                  "location": "stepdefinition.HooksDemo.printLine()"
-                }
-              }
-            ],
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "error_message": "org.junit.ComparisonFailure: expected:\u003cactiTIME - [Enter Time-Track]\u003e but was:\u003cactiTIME - [Login]\u003e\r\n\tat org.junit.Assert.assertEquals(Assert.java:117)\r\n\tat org.junit.Assert.assertEquals(Assert.java:146)\r\n\tat stepdefinition.ActitimeSteps.user_will_be_landed_in_dashboard_page(ActitimeSteps.java:61)\r\n\tat ✽.user will be landed in dashboard page(file:///D:/SynechronBDD_15_03_2021/Eclipse_WS/actitime/src/test/java/feature/login.feature:15)\r\n",
-              "duration": 5000000,
-              "status": "failed"
-            },
-            "before": [
-              {
-                "result": {
-                  "status": "passed"
-                },
-                "match": {
-                  "location": "stepdefinition.HooksDemo.welcomeMSg()"
-                }
-              }
-            ],
-            "line": 15,
-            "name": "user will be landed in dashboard page",
-            "match": {
-              "location": "stepdefinition.ActitimeSteps.user_will_be_landed_in_dashboard_page()"
-            },
-            "after": [
-              {
-                "result": {
-                  "status": "passed"
-                },
-                "match": {
-                  "location": "stepdefinition.HooksDemo.printLine()"
-                }
-              }
-            ],
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@regression"
-          },
-          {
-            "name": "@acititme"
-          },
-          {
-            "name": "@testss"
+            "name": "@pom"
           }
         ]
       }
@@ -346,7 +155,7 @@
     "description": "",
     "id": "login-functionality",
     "keyword": "Feature",
-    "uri": "file:src/test/java/feature/login.feature",
+    "uri": "file:src/test/java/feature/loginUsingPOM.feature",
     "tags": [
       {
         "name": "@regression",

@@ -211,7 +211,7 @@ public class ActitimeSteps {
 		}
 	}
 	
-	@After("@testss or @actitime or @regression")
+	@After("@testss")
 	public void teardown(Scenario sc) throws IOException
 	{
 		System.out.println("----------AFTER HOOK ---------------");

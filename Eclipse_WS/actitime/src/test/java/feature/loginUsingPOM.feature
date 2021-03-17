@@ -1,0 +1,8 @@
+@regression
+Feature: Login Functionality
+	@pom
+  Scenario: Successful Login
+    Given pomuser is on login page
+    When pomuser enter valid username and password
+    And pomuser click on login Button
+    Then pomuser will be landed in dashboard page
