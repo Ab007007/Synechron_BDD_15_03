@@ -1,10 +1,16 @@
 package stepdefinition;
 
+import java.io.File;
+import java.io.IOException;
+import java.util.Date;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.commons.io.FileUtils;
 import org.junit.Assert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -13,13 +19,15 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import io.cucumber.datatable.DataTable;
+import io.cucumber.java.After;
+import io.cucumber.java.Scenario;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class ActitimeSteps {
-	WebDriver driver = null;
+	static WebDriver driver = null;
 
 	@Given("user is on login page")
 	public void user_is_on_login_page() {
@@ -30,7 +38,7 @@ public class ActitimeSteps {
 		driver.get("http://localhost/login.do");
 	}
 
-	@When("user enter valid {} and {}")
+	@When("loginuser enter valid {} and {}")
 	public void user_enter_valid_username_and_password(String un, String pwd) {
 		driver.findElement(By.id("username")).sendKeys(un);
 		driver.findElement(By.name("pwd")).sendKeys(pwd);
@@ -53,11 +61,11 @@ public class ActitimeSteps {
 		Assert.assertEquals("actiTIME - Enter Time-Track", driver.getTitle());
 	}
 
-//	@When("user enter invalid username and password")
-//	public void user_enter_invalid_username_and_password() {
-//		driver.findElement(By.id("username")).sendKeys("admin1");
-//		driver.findElement(By.name("pwd")).sendKeys("manager1");
-//	}
+	@When("loginuser enter invalid username and password")
+	public void user_enter_invalid_username_and_password() {
+		driver.findElement(By.id("username")).sendKeys("admin1");
+		driver.findElement(By.name("pwd")).sendKeys("manager1");
+	}
 
 	@Then("user will be stay on login page with error message")
 	public void user_will_be_stay_on_login_page_with_error_message() {
@@ -101,8 +109,7 @@ public class ActitimeSteps {
 	public void user_click_on_new_customer_button() throws InterruptedException {
 		driver.findElement(By.xpath("//div[@class='addNewContainer']")).click();
 		driver.findElement(By.xpath("//div[contains(text(),'New Customer')]")).click();
-		Thread.sleep(3000);
-
+		
 	}
 
 	@Then("user enter {} and {}")
@@ -150,15 +157,14 @@ public class ActitimeSteps {
 	// --------------- delete customer -----------------------------
 	@Then("user search for a customer {} and click on settings button")
 	public void user_search_for_a_customer_and_click_on_settings_button(String string) throws InterruptedException {
-		driver.findElement(By.xpath("//div[@class='customersProjectsPanel']//input")).sendKeys(string);
+		driver.findElement(By.xpath("//div[@class='customersProjectsPanel']//input")).clear();
+				driver.findElement(By.xpath("//div[@class='customersProjectsPanel']//input")).sendKeys(string);
 		Actions act = new Actions(driver);
 		act.moveToElement(driver.findElement(By.xpath(
 				"//div[@class='node allCustomersNode selected']/following-sibling::div//div[@class='editButton available']")))
 				.perform();
 		Thread.sleep(3000);
-		act.click(driver.findElement(By.xpath(
-				"//div[@class='node allCustomersNode selected']/following-sibling::div//div[@class='editButton available']")))
-				.perform();
+		driver.findElement(By.xpath("//div[@class='node allCustomersNode selected']/following-sibling::div//div[@class='editButton available']")).click();
 
 	}
 
@@ -171,12 +177,16 @@ public class ActitimeSteps {
 		ele.click();
 		driver.findElement(By.xpath("//div[@class='edit_customer_sliding_panel sliding_panel']//div[text()='Delete']"))
 				.click();
-		Thread.sleep(3000);
+		
 		driver.findElement(By.id("customerPanel_deleteConfirm_submitTitle")).click();
-		WebElement toastElement = wait
-				.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath("//div[@class='toast']"))));
-		System.out.println(toastElement.getText());
-		wait.until(ExpectedConditions.invisibilityOf(driver.findElement(By.xpath("//div[@class='toast']"))));
+		/*
+		 * Thread.sleep(1000); WebDriverWait wait1 = new WebDriverWait(driver, 30);
+		 * WebElement toastElement = wait1
+		 * .until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath(
+		 * "//div[@class='toasts']")))); System.out.println(toastElement.getText());
+		 * wait1.until(ExpectedConditions.invisibilityOf(driver.findElement(By.xpath(
+		 * "//div[@class='toasts']"))));
+		 */
 
 	}
 
@@ -200,5 +210,30 @@ public class ActitimeSteps {
 			user_validate_the_success_message();
 		}
 	}
+	
+	@After("@testss")
+	public void teardown(Scenario sc) throws IOException
+	{
+		System.out.println("----------AFTER HOOK ---------------");
+		System.out.println("Status of the test - " + sc.getName());
+		System.out.println("Status of the test - " + sc.getStatus());
+		System.out.println("Status of the test - " + sc.isFailed());
+		System.out.println("---------------------------------");
+		if(sc.isFailed())
+		{
+			Date d = new Date();
+			String dt = d.toString().replace(" ", "_").replace(":", "_");
+			System.out.println(dt);
+			TakesScreenshot ss = (TakesScreenshot) driver;
+			File file = ss.getScreenshotAs(OutputType.FILE);
+			FileUtils.copyFile(file, new File("target/screenShots/ss" + dt + ".jpg"));
+		}
+		else
+		{
+			System.out.println("Scenario " + sc.getName() + " is passed");
+		}
+		driver.close();
+	}
+
 
 }

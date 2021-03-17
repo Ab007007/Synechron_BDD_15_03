@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner" project="actitime" tests="4" started="4" failures="0" errors="8" ignored="0">
+  <testsuite name="runner.TestRunner" time="82.773">
+    <testsuite name="Customer Deletion" time="82.773">
+      <testcase name="Delete customer #2" classname="Customer Deletion" time="22.033">
+        <error>java.lang.NullPointerException&#13;
+	at stepdefinition.HooksDemo.teardown(HooksDemo.java:52)&#13;
+&#13;
+java.lang.NullPointerException&#13;
+	at stepdefinition.GoogleSearch.teardown(GoogleSearch.java:171)&#13;
+&#13;
+</error>
+      </testcase>
+      <testcase name="Delete customer #3" classname="Customer Deletion" time="19.687">
+        <error>java.lang.NullPointerException&#13;
+	at stepdefinition.HooksDemo.teardown(HooksDemo.java:52)&#13;
+&#13;
+java.lang.NullPointerException&#13;
+	at stepdefinition.GoogleSearch.teardown(GoogleSearch.java:171)&#13;
+&#13;
+</error>
+      </testcase>
+      <testcase name="Delete customer #4" classname="Customer Deletion" time="20.83">
+        <error>java.lang.NullPointerException&#13;
+	at stepdefinition.HooksDemo.teardown(HooksDemo.java:52)&#13;
+&#13;
+java.lang.NullPointerException&#13;
+	at stepdefinition.GoogleSearch.teardown(GoogleSearch.java:171)&#13;
+&#13;
+</error>
+      </testcase>
+      <testcase name="Delete customer #5" classname="Customer Deletion" time="20.211">
+        <error>java.lang.NullPointerException&#13;
+	at stepdefinition.HooksDemo.teardown(HooksDemo.java:52)&#13;
+&#13;
+java.lang.NullPointerException&#13;
+	at stepdefinition.GoogleSearch.teardown(GoogleSearch.java:171)&#13;
+&#13;
+</error>
+      </testcase>
+    </testsuite>
+  </testsuite>
+</testrun>

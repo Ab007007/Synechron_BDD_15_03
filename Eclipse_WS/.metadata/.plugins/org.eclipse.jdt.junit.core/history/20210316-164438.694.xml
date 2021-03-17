@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner" project="actitime" tests="1" started="1" failures="0" errors="0" ignored="0">
+  <testsuite name="runner.TestRunner" time="35.93">
+    <testsuite name="Customer Creation #2" time="35.93">
+      <testcase name="Create new customer" classname="Customer Creation #2" time="35.93"/>
+    </testsuite>
+  </testsuite>
+</testrun>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner" project="actitime" tests="4" started="2" failures="0" errors="1" ignored="0">
+  <testsuite name="runner.TestRunner" incomplete="true">
+    <testsuite name="Customer Deletion" incomplete="true">
+      <testcase name="Delete customer #2" classname="Customer Deletion" time="34.39">
+        <error>org.openqa.selenium.NoSuchElementException: Cannot locate an element using xpath=//div[@class='toast']
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ARAVINDA-DELL-P', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+Driver info: driver.version: RemoteWebDriver&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)&#13;
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)&#13;
+	at stepdefinition.ActitimeSteps.user_validate_the_success_message(ActitimeSteps.java:125)&#13;
+	at ✽.user validate the success message(file:///D:/SynechronBDD_15_03_2021/Eclipse_WS/actitime/src/test/java/feature/deleteCustomer.feature:20)&#13;
+&#13;
+</error>
+      </testcase>
+      <testcase name="Delete customer #3" classname="Customer Deletion" incomplete="true"/>
+      <testcase name="Delete customer #4" classname="Customer Deletion" incomplete="true"/>
+      <testcase name="Delete customer #5" classname="Customer Deletion" incomplete="true"/>
+    </testsuite>
+  </testsuite>
+</testrun>

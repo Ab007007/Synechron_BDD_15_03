@@ -1,16 +1,16 @@
 @regression
 Feature: Login Functionality
-	@actitime
+	@actitime @testss
   Scenario: Successful Login
     Given user is on login page
-    When user enter valid username and password
+    When loginuser enter valid username and password
     And click on login Button
     Then user will be landed in dashboard page
-    And close the browser
-	@acititme
+ #   And close the browser
+	@acititme @testss
   Scenario: UnSuccessful Login
     Given user is on login page
-    When user enter invalid username and password
+    When loginuser enter invalid username and password
     And click on login Button
-    Then user will be stay on login page with error message
-    And close the browser
+    Then user will be landed in dashboard page
+ #   And close the browser

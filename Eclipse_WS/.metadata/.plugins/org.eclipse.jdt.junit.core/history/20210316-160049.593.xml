@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner" project="actitime" tests="2" started="2" failures="1" errors="0" ignored="0">
+  <testsuite name="runner.TestRunner" time="27.651">
+    <testsuite name="Printing Google Search results #2" time="27.651">
+      <testcase name="User Search and print the company realated search #1" classname="Printing Google Search results #2" time="14.61"/>
+      <testcase name="User Search and print the company realated search #2" classname="Printing Google Search results #2" time="13.041">
+        <failure>junit.framework.AssertionFailedError&#13;
+	at junit.framework.Assert.fail(Assert.java:55)&#13;
+	at junit.framework.Assert.assertTrue(Assert.java:22)&#13;
+	at junit.framework.Assert.assertFalse(Assert.java:39)&#13;
+	at junit.framework.Assert.assertFalse(Assert.java:47)&#13;
+	at stepdefinition.GoogleSearch.user_prints_the_search_results(GoogleSearch.java:74)&#13;
+	at ✽.user prints the search results for 5 pages(file:///D:/SynechronBDD_15_03_2021/Eclipse_WS/actitime/src/test/java/feature/googleSearchUsingHooks.feature:16)&#13;
+&#13;
+</failure>
+      </testcase>
+    </testsuite>
+  </testsuite>
+</testrun>

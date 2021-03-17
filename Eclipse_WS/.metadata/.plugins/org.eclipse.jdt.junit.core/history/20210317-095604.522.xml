@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner" project="actitime" tests="2" started="2" failures="2" errors="0" ignored="0">
+  <testsuite name="runner.TestRunner" time="19.769">
+    <testsuite name="Login Functionality #1" time="19.768">
+      <testcase name="Successful Login" classname="Login Functionality #1" time="10.151">
+        <failure>
+          <expected>actiTIME - Enter Time-Track</expected>
+          <actual>actiTIME - Login</actual>org.junit.ComparisonFailure: expected:&lt;actiTIME - [Enter Time-Track]&gt; but was:&lt;actiTIME - [Login]&gt;&#13;
+	at org.junit.Assert.assertEquals(Assert.java:117)&#13;
+	at org.junit.Assert.assertEquals(Assert.java:146)&#13;
+	at stepdefinition.ActitimeSteps.user_will_be_landed_in_dashboard_page(ActitimeSteps.java:61)&#13;
+	at ✽.user will be landed in dashboard page(file:///D:/SynechronBDD_15_03_2021/Eclipse_WS/actitime/src/test/java/feature/login.feature:8)&#13;
+&#13;
+</failure>
+      </testcase>
+      <testcase name="UnSuccessful Login" classname="Login Functionality #1" time="9.61">
+        <failure>
+          <expected>actiTIME - Enter Time-Track</expected>
+          <actual>actiTIME - Login</actual>org.junit.ComparisonFailure: expected:&lt;actiTIME - [Enter Time-Track]&gt; but was:&lt;actiTIME - [Login]&gt;&#13;
+	at org.junit.Assert.assertEquals(Assert.java:117)&#13;
+	at org.junit.Assert.assertEquals(Assert.java:146)&#13;
+	at stepdefinition.ActitimeSteps.user_will_be_landed_in_dashboard_page(ActitimeSteps.java:61)&#13;
+	at ✽.user will be landed in dashboard page(file:///D:/SynechronBDD_15_03_2021/Eclipse_WS/actitime/src/test/java/feature/login.feature:15)&#13;
+&#13;
+</failure>
+      </testcase>
+    </testsuite>
+  </testsuite>
+</testrun>

@@ -1,24 +1,31 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="27.764">
-<testcase classname="Printing Google Search results" name="User Search and print the company realated search" time="14.511">
-<system-out><![CDATA[Given hookuser is on google page............................................passed
-When data table user search company name and print the search results.......passed
-]]></system-out>
-</testcase>
-<testcase classname="Printing Google Search results" name="User Search and print the company realated search 2" time="12.988">
-<failure message="" type="junit.framework.AssertionFailedError"><![CDATA[Given hookuser is on google page............................................passed
-When guser enter IBMMMM.....................................................passed
-And click on search button..................................................passed
-Then user prints the search results for 5 pages.............................failed
+<testsuite errors="0" failures="2" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="21.561">
+<testcase classname="Login Functionality" name="Successful Login" time="11.485">
+<failure message="expected:&lt;actiTIME - [Enter Time-Track]&gt; but was:&lt;actiTIME - [Login]&gt;" type="org.junit.ComparisonFailure"><![CDATA[Given user is on login page.................................................passed
+When loginuser enter valid username and password............................passed
+And click on login Button...................................................passed
+Then user will be landed in dashboard page..................................failed
 
 StackTrace:
-junit.framework.AssertionFailedError
-	at junit.framework.Assert.fail(Assert.java:55)
-	at junit.framework.Assert.assertTrue(Assert.java:22)
-	at junit.framework.Assert.assertFalse(Assert.java:39)
-	at junit.framework.Assert.assertFalse(Assert.java:47)
-	at stepdefinition.GoogleSearch.user_prints_the_search_results(GoogleSearch.java:74)
-	at ✽.user prints the search results for 5 pages(file:///D:/SynechronBDD_15_03_2021/Eclipse_WS/actitime/src/test/java/feature/googleSearchUsingHooks.feature:16)
+org.junit.ComparisonFailure: expected:<actiTIME - [Enter Time-Track]> but was:<actiTIME - [Login]>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at stepdefinition.ActitimeSteps.user_will_be_landed_in_dashboard_page(ActitimeSteps.java:61)
+	at ✽.user will be landed in dashboard page(file:///D:/SynechronBDD_15_03_2021/Eclipse_WS/actitime/src/test/java/feature/login.feature:8)
+]]></failure>
+</testcase>
+<testcase classname="Login Functionality" name="UnSuccessful Login" time="9.786">
+<failure message="expected:&lt;actiTIME - [Enter Time-Track]&gt; but was:&lt;actiTIME - [Login]&gt;" type="org.junit.ComparisonFailure"><![CDATA[Given user is on login page.................................................passed
+When loginuser enter invalid username and password..........................passed
+And click on login Button...................................................passed
+Then user will be landed in dashboard page..................................failed
+
+StackTrace:
+org.junit.ComparisonFailure: expected:<actiTIME - [Enter Time-Track]> but was:<actiTIME - [Login]>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at stepdefinition.ActitimeSteps.user_will_be_landed_in_dashboard_page(ActitimeSteps.java:61)
+	at ✽.user will be landed in dashboard page(file:///D:/SynechronBDD_15_03_2021/Eclipse_WS/actitime/src/test/java/feature/login.feature:15)
 ]]></failure>
 </testcase>
 </testsuite>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner" project="actitime" tests="2" started="2" failures="1" errors="1" ignored="0">
+  <testsuite name="runner.TestRunner" time="15.82">
+    <testsuite name="Login Functionality #1" time="15.82">
+      <testcase name="Successful Login" classname="Login Functionality #1" time="10.369">
+        <failure>
+          <expected>actiTIME - Enter Time-Track</expected>
+          <actual>actiTIME - Login</actual>org.junit.ComparisonFailure: expected:&lt;actiTIME - [Enter Time-Track]&gt; but was:&lt;actiTIME - [Login]&gt;&#13;
+	at org.junit.Assert.assertEquals(Assert.java:117)&#13;
+	at org.junit.Assert.assertEquals(Assert.java:146)&#13;
+	at stepdefinition.ActitimeSteps.user_will_be_landed_in_dashboard_page(ActitimeSteps.java:61)&#13;
+	at ✽.user will be landed in dashboard page(file:///D:/SynechronBDD_15_03_2021/Eclipse_WS/actitime/src/test/java/feature/login.feature:8)&#13;
+&#13;
+</failure>
+      </testcase>
+      <testcase name="UnSuccessful Login" classname="Login Functionality #1" time="5.441">
+        <error>io.cucumber.junit.UndefinedStepException: The step 'loginuser enter invalid username and password' is undefined.
+You can implement this step using the snippet(s) below:
+
+@When("loginuser enter invalid username and password")
+public void loginuser_enter_invalid_username_and_password() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+&#13;
+&#13;
+</error>
+      </testcase>
+    </testsuite>
+  </testsuite>
+</testrun>

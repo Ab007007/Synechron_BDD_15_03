@@ -2,6 +2,7 @@ package stepdefinition;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.Date;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.commons.io.FileUtils;
@@ -20,7 +21,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class HooksDemo {
 
 	WebDriver driver = null;
-	@Before
+	@Before(value = "@google")
 	public void setup()
 	{
 		WebDriverManager.chromedriver().setup();
@@ -29,17 +30,20 @@ public class HooksDemo {
 		driver.manage().window().maximize();
 		
 		GoogleSearch.driver = driver;
+		ActitimeSteps.driver = driver;
 	}
 	
 	
-	@After
+	//@After
 	public void teardown(Scenario sc) throws IOException
 	{
 		if(sc.isFailed())
 		{
+			Date d = new Date();
+			String dt = d.toString().replace(" ", "_").replace(":", "_");
 			TakesScreenshot ss = (TakesScreenshot) driver;
 			File file = ss.getScreenshotAs(OutputType.FILE);
-			FileUtils.copyFile(file, new File("target/screenShots/ss.jpg"));
+			FileUtils.copyFile(file, new File("target/screenShots/ss" + dt + ".jpg"));
 		}
 		else
 		{
