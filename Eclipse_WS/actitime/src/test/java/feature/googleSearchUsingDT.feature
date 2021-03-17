@@ -1,5 +1,6 @@
 Feature: Printing Google Search results
-	@google @regression 
+
+  @google @regression
   Scenario: User Search and print the company realated search
     Given user is on google page
     When data table user search company name and print the search results
@@ -17,13 +18,11 @@ Feature: Printing Google Search results
       | wipro     |
     And user close the browser
 
-    Scenario: User Search and print the company realated search using lists
+ 
+  Scenario: User Search and print the company realated search using lists
     Given user is on google page
     When lists data table user search company name and print the search results
       | synechron |
       | ibm       |
       | wipro     |
     And user close the browser
-    
-    
-    

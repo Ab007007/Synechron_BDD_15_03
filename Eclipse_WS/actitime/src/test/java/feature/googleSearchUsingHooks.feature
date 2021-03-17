@@ -1,6 +1,6 @@
 Feature: Printing Google Search results
 
-  @hooks
+  @hooks 
   Scenario: User Search and print the company realated search
     Given hookuser is on google page
     When data table user search company name and print the search results

@@ -3,11 +3,208 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2021-03-17T07:42:21.197Z",
+        "start_timestamp": "2021-03-17T10:25:45.844Z",
         "before": [
           {
             "result": {
-              "duration": 3452000000,
+              "duration": 3056000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinition.AcititmeTests.setup()"
+            }
+          }
+        ],
+        "line": 11,
+        "name": "UnSuccessful Login",
+        "description": "",
+        "id": "login-functionality;unsuccessful-login",
+        "after": [
+          {
+            "result": {
+              "duration": 181000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinition.AcititmeTests.saveReports()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4350000000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepdefinition.HooksDemo.welcomeMSg()"
+                }
+              }
+            ],
+            "line": 12,
+            "name": "user is on login page",
+            "match": {
+              "location": "stepdefinition.ActitimeSteps.user_is_on_login_page()"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepdefinition.HooksDemo.printLine()"
+                }
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 109000000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 1000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepdefinition.HooksDemo.welcomeMSg()"
+                }
+              }
+            ],
+            "line": 13,
+            "name": "loginuser enter invalid username and password",
+            "match": {
+              "location": "stepdefinition.ActitimeSteps.user_enter_invalid_username_and_password()"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepdefinition.HooksDemo.printLine()"
+                }
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5049000000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepdefinition.HooksDemo.welcomeMSg()"
+                }
+              }
+            ],
+            "line": 14,
+            "name": "click on login Button",
+            "match": {
+              "location": "stepdefinition.ActitimeSteps.click_on_login_button()"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepdefinition.HooksDemo.printLine()"
+                }
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "org.junit.ComparisonFailure: expected:\u003cactiTIME - [Enter Time-Track]\u003e but was:\u003cactiTIME - [Login]\u003e\r\n\tat org.junit.Assert.assertEquals(Assert.java:117)\r\n\tat org.junit.Assert.assertEquals(Assert.java:146)\r\n\tat stepdefinition.ActitimeSteps.user_will_be_landed_in_dashboard_page(ActitimeSteps.java:61)\r\n\tat ✽.user will be landed in dashboard page(file:///D:/SynechronBDD_15_03_2021/Eclipse_WS/actitime/src/test/java/feature/login.feature:15)\r\n",
+              "duration": 8000000,
+              "status": "failed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepdefinition.HooksDemo.welcomeMSg()"
+                }
+              }
+            ],
+            "line": 15,
+            "name": "user will be landed in dashboard page",
+            "match": {
+              "location": "stepdefinition.ActitimeSteps.user_will_be_landed_in_dashboard_page()"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepdefinition.HooksDemo.printLine()"
+                }
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression"
+          },
+          {
+            "name": "@acititme"
+          },
+          {
+            "name": "@testss"
+          },
+          {
+            "name": "@pom"
+          }
+        ]
+      }
+    ],
+    "name": "Login Functionality",
+    "description": "",
+    "id": "login-functionality",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/feature/login.feature",
+    "tags": [
+      {
+        "name": "@regression",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2021-03-17T10:25:58.681Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1350000000,
               "status": "passed"
             },
             "match": {
@@ -22,7 +219,7 @@
         "after": [
           {
             "result": {
-              "duration": 389000000,
+              "duration": 51000000,
               "status": "passed"
             },
             "match": {
@@ -35,12 +232,13 @@
         "steps": [
           {
             "result": {
-              "duration": 2246000000,
+              "duration": 3380000000,
               "status": "passed"
             },
             "before": [
               {
                 "result": {
+                  "duration": 1000000,
                   "status": "passed"
                 },
                 "match": {
@@ -67,7 +265,7 @@
           },
           {
             "result": {
-              "duration": 204000000,
+              "duration": 139000000,
               "status": "passed"
             },
             "before": [
@@ -99,13 +297,12 @@
           },
           {
             "result": {
-              "duration": 5096000000,
+              "duration": 5073000000,
               "status": "passed"
             },
             "before": [
               {
                 "result": {
-                  "duration": 1000000,
                   "status": "passed"
                 },
                 "match": {
@@ -132,7 +329,7 @@
           },
           {
             "result": {
-              "duration": 9000000,
+              "duration": 6000000,
               "status": "passed"
             },
             "before": [
@@ -153,7 +350,6 @@
             "after": [
               {
                 "result": {
-                  "duration": 1000000,
                   "status": "passed"
                 },
                 "match": {
@@ -165,12 +361,13 @@
           },
           {
             "result": {
-              "duration": 407000000,
+              "duration": 2348000000,
               "status": "passed"
             },
             "before": [
               {
                 "result": {
+                  "duration": 1000000,
                   "status": "passed"
                 },
                 "match": {
@@ -207,11 +404,11 @@
         ]
       },
       {
-        "start_timestamp": "2021-03-17T07:42:33.125Z",
+        "start_timestamp": "2021-03-17T10:26:11.044Z",
         "before": [
           {
             "result": {
-              "duration": 1741000000,
+              "duration": 1480000000,
               "status": "passed"
             },
             "match": {
@@ -226,7 +423,7 @@
         "after": [
           {
             "result": {
-              "duration": 60000000,
+              "duration": 42000000,
               "status": "passed"
             },
             "match": {
@@ -239,7 +436,7 @@
         "steps": [
           {
             "result": {
-              "duration": 2965000000,
+              "duration": 3286000000,
               "status": "passed"
             },
             "before": [
@@ -271,12 +468,13 @@
           },
           {
             "result": {
-              "duration": 164000000,
+              "duration": 114000000,
               "status": "passed"
             },
             "before": [
               {
                 "result": {
+                  "duration": 1000000,
                   "status": "passed"
                 },
                 "match": {
@@ -303,7 +501,7 @@
           },
           {
             "result": {
-              "duration": 5093000000,
+              "duration": 5059000000,
               "status": "passed"
             },
             "before": [
@@ -335,13 +533,12 @@
           },
           {
             "result": {
-              "duration": 9000000,
+              "duration": 6000000,
               "status": "passed"
             },
             "before": [
               {
                 "result": {
-                  "duration": 1000000,
                   "status": "passed"
                 },
                 "match": {
@@ -368,7 +565,7 @@
           },
           {
             "result": {
-              "duration": 366000000,
+              "duration": 404000000,
               "status": "passed"
             },
             "before": [

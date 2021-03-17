@@ -7,7 +7,7 @@ Feature: Login Functionality
     And click on login Button
     Then user will be landed in dashboard page
  #   And close the browser
-	@acititme @testss
+	@acititme @testss @pom
   Scenario: UnSuccessful Login
     Given user is on login page
     When loginuser enter invalid username and password

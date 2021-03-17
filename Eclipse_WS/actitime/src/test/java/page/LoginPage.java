@@ -7,6 +7,7 @@ import org.openqa.selenium.support.PageFactory;
 
 public class LoginPage {
 
+//	static String USERNAME_ID = "username";
 	
 	@FindBy(id = "username")
 	WebElement usernameTxtBox;
