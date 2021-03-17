@@ -3,11 +3,11 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2021-03-17T06:31:46.894Z",
+        "start_timestamp": "2021-03-17T07:42:21.197Z",
         "before": [
           {
             "result": {
-              "duration": 2818000000,
+              "duration": 3452000000,
               "status": "passed"
             },
             "match": {
@@ -15,14 +15,14 @@
             }
           }
         ],
-        "line": 4,
-        "name": "Successful Login",
+        "line": 5,
+        "name": "Successful Login1",
         "description": "",
-        "id": "login-functionality;successful-login",
+        "id": "login-functionality;successful-login1",
         "after": [
           {
             "result": {
-              "duration": 295000000,
+              "duration": 389000000,
               "status": "passed"
             },
             "match": {
@@ -35,41 +35,7 @@
         "steps": [
           {
             "result": {
-              "duration": 3056000000,
-              "status": "passed"
-            },
-            "before": [
-              {
-                "result": {
-                  "duration": 1000000,
-                  "status": "passed"
-                },
-                "match": {
-                  "location": "stepdefinition.HooksDemo.welcomeMSg()"
-                }
-              }
-            ],
-            "line": 5,
-            "name": "pomuser is on login page",
-            "match": {
-              "location": "stepdefinition.AcititmeTests.pomuser_is_on_login_page()"
-            },
-            "after": [
-              {
-                "result": {
-                  "duration": 1000000,
-                  "status": "passed"
-                },
-                "match": {
-                  "location": "stepdefinition.HooksDemo.printLine()"
-                }
-              }
-            ],
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 132000000,
+              "duration": 2246000000,
               "status": "passed"
             },
             "before": [
@@ -83,6 +49,38 @@
               }
             ],
             "line": 6,
+            "name": "pomuser is on login page",
+            "match": {
+              "location": "stepdefinition.AcititmeTests.pomuser_is_on_login_page()"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepdefinition.HooksDemo.printLine()"
+                }
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 204000000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepdefinition.HooksDemo.welcomeMSg()"
+                }
+              }
+            ],
+            "line": 7,
             "name": "pomuser enter valid username and password",
             "match": {
               "location": "stepdefinition.AcititmeTests.pomuser_enter_valid_username_and_password()"
@@ -90,7 +88,6 @@
             "after": [
               {
                 "result": {
-                  "duration": 1000000,
                   "status": "passed"
                 },
                 "match": {
@@ -102,7 +99,7 @@
           },
           {
             "result": {
-              "duration": 5058000000,
+              "duration": 5096000000,
               "status": "passed"
             },
             "before": [
@@ -116,7 +113,7 @@
                 }
               }
             ],
-            "line": 7,
+            "line": 8,
             "name": "pomuser click on login Button",
             "match": {
               "location": "stepdefinition.AcititmeTests.pomuser_click_on_login_button()"
@@ -135,7 +132,210 @@
           },
           {
             "result": {
-              "duration": 7000000,
+              "duration": 9000000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepdefinition.HooksDemo.welcomeMSg()"
+                }
+              }
+            ],
+            "line": 9,
+            "name": "pomuser will be landed in dashboard page",
+            "match": {
+              "location": "stepdefinition.AcititmeTests.pomuser_will_be_landed_in_dashboard_page()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 1000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepdefinition.HooksDemo.printLine()"
+                }
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 407000000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepdefinition.HooksDemo.welcomeMSg()"
+                }
+              }
+            ],
+            "line": 10,
+            "name": "pomuser will logout and close browser",
+            "match": {
+              "location": "stepdefinition.AcititmeTests.pomuser_will_logout_and_close_browser()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 1000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepdefinition.HooksDemo.printLine()"
+                }
+              }
+            ],
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression"
+          },
+          {
+            "name": "@pom"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-03-17T07:42:33.125Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1741000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinition.AcititmeTests.setup()"
+            }
+          }
+        ],
+        "line": 13,
+        "name": "Successful Login2",
+        "description": "",
+        "id": "login-functionality;successful-login2",
+        "after": [
+          {
+            "result": {
+              "duration": 60000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinition.AcititmeTests.saveReports()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2965000000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepdefinition.HooksDemo.welcomeMSg()"
+                }
+              }
+            ],
+            "line": 14,
+            "name": "pomuser is on login page",
+            "match": {
+              "location": "stepdefinition.AcititmeTests.pomuser_is_on_login_page()"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepdefinition.HooksDemo.printLine()"
+                }
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 164000000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepdefinition.HooksDemo.welcomeMSg()"
+                }
+              }
+            ],
+            "line": 15,
+            "name": "pomuser enter valid username and password",
+            "match": {
+              "location": "stepdefinition.AcititmeTests.pomuser_enter_valid_username_and_password()"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepdefinition.HooksDemo.printLine()"
+                }
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5093000000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepdefinition.HooksDemo.welcomeMSg()"
+                }
+              }
+            ],
+            "line": 16,
+            "name": "pomuser click on login Button",
+            "match": {
+              "location": "stepdefinition.AcititmeTests.pomuser_click_on_login_button()"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepdefinition.HooksDemo.printLine()"
+                }
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 9000000,
               "status": "passed"
             },
             "before": [
@@ -149,7 +349,7 @@
                 }
               }
             ],
-            "line": 8,
+            "line": 17,
             "name": "pomuser will be landed in dashboard page",
             "match": {
               "location": "stepdefinition.AcititmeTests.pomuser_will_be_landed_in_dashboard_page()"
@@ -168,7 +368,7 @@
           },
           {
             "result": {
-              "duration": 298000000,
+              "duration": 366000000,
               "status": "passed"
             },
             "before": [
@@ -181,7 +381,7 @@
                 }
               }
             ],
-            "line": 9,
+            "line": 18,
             "name": "pomuser will logout and close browser",
             "match": {
               "location": "stepdefinition.AcititmeTests.pomuser_will_logout_and_close_browser()"
@@ -189,7 +389,6 @@
             "after": [
               {
                 "result": {
-                  "duration": 1000000,
                   "status": "passed"
                 },
                 "match": {

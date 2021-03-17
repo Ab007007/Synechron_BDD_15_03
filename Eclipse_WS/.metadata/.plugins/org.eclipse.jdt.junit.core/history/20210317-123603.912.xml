@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner" project="actitime" tests="2" started="2" failures="0" errors="2" ignored="0">
+  <testsuite name="runner.TestRunner" time="4.82">
+    <testsuite name="Login Functionality #2" time="4.82">
+      <testcase name="Successful Login #1" classname="Login Functionality #2" time="3.28">
+        <error>io.cucumber.junit.UndefinedStepException: The step 'pomuser is on login page' is undefined.
+You can implement this step using the snippet(s) below:
+
+@Given("pomuser is on login page")
+public void pomuser_is_on_login_page() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+&#13;
+&#13;
+</error>
+      </testcase>
+      <testcase name="Successful Login #2" classname="Login Functionality #2" time="1.537">
+        <error>io.cucumber.junit.UndefinedStepException: The step 'pomuser is on login page' is undefined.
+You can implement this step using the snippet(s) below:
+
+@Given("pomuser is on login page")
+public void pomuser_is_on_login_page() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+&#13;
+&#13;
+</error>
+      </testcase>
+    </testsuite>
+  </testsuite>
+</testrun>

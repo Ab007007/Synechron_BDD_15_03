@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner" project="actitime" tests="2" started="2" failures="0" errors="0" ignored="0">
+  <testsuite name="runner.TestRunner" time="22.778">
+    <testsuite name="Login Functionality #2" time="22.778">
+      <testcase name="Successful Login #1" classname="Login Functionality #2" time="11.738"/>
+      <testcase name="Successful Login #2" classname="Login Functionality #2" time="11.04"/>
+    </testsuite>
+  </testsuite>
+</testrun>

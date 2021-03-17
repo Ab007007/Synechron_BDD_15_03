@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="11.981">
-<testcase classname="Login Functionality" name="Successful Login" time="11.745">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="22.618">
+<testcase classname="Login Functionality" name="Successful Login1" time="11.915">
+<system-out><![CDATA[Given pomuser is on login page..............................................passed
+When pomuser enter valid username and password..............................passed
+And pomuser click on login Button...........................................passed
+Then pomuser will be landed in dashboard page...............................passed
+And pomuser will logout and close browser...................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login Functionality" name="Successful Login2" time="10.406">
 <system-out><![CDATA[Given pomuser is on login page..............................................passed
 When pomuser enter valid username and password..............................passed
 And pomuser click on login Button...........................................passed

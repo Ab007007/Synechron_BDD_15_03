@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner" project="actitime" tests="2" started="2" failures="0" errors="4" ignored="0">
+  <testsuite name="runner.TestRunner" time="4.627">
+    <testsuite name="Login Functionality #2" time="4.627">
+      <testcase name="Successful Login #1" classname="Login Functionality #2" time="2.945">
+        <error>java.lang.NullPointerException&#13;
+	at stepdefinition.AcititmeTests.pomuser_is_on_login_page(AcititmeTests.java:61)&#13;
+	at ✽.pomuser is on login page(file:///D:/SynechronBDD_15_03_2021/Eclipse_WS/actitime/src/test/java/feature/loginUsingPOM.feature:6)&#13;
+&#13;
+java.lang.NullPointerException&#13;
+	at stepdefinition.AcititmeTests.saveReports(AcititmeTests.java:44)&#13;
+&#13;
+</error>
+      </testcase>
+      <testcase name="Successful Login #2" classname="Login Functionality #2" time="1.674">
+        <error>java.lang.NullPointerException&#13;
+	at stepdefinition.AcititmeTests.pomuser_is_on_login_page(AcititmeTests.java:61)&#13;
+	at ✽.pomuser is on login page(file:///D:/SynechronBDD_15_03_2021/Eclipse_WS/actitime/src/test/java/feature/loginUsingPOM.feature:14)&#13;
+&#13;
+java.lang.NullPointerException&#13;
+	at stepdefinition.AcititmeTests.saveReports(AcititmeTests.java:44)&#13;
+&#13;
+</error>
+      </testcase>
+    </testsuite>
+  </testsuite>
+</testrun>

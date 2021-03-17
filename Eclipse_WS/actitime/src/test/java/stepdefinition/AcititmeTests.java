@@ -20,41 +20,39 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 import page.DashboardPage;
 import page.LoginPage;
 
+
 public class AcititmeTests {
 
+	
 	String url = "http://localhost/login.do";
+	String testName = null;
 	WebDriver driver = null;
 	LoginPage lp  = null;
 	DashboardPage dp  = null;
-	ExtentReports reports = null;
 	ExtentTest test = null;
-	
+	static ExtentReports reports = null;
 	@After
 	public void saveReports()
 	{
 		reports.flush();
+		reports = null;
 		
 	}
 	@Before
 	public void setup()
 	{
-		
-		Date d = new Date();
-		String dt = d.toString().replace(" ", "_").replace(":", "_");
-		
-		
 		WebDriverManager.chromedriver().setup();
 		driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
-		reports = new ExtentReports("target\\reports\\Automation_Report_" + dt + ".html");
 		lp = new LoginPage(driver);
 		dp = new DashboardPage(driver);
+		 reports = new ExtentReports("target\\reports\\Automation_Report_" + new Date().toString().replace(" ", "_").replace(":", "_") + ".html", false);
 		
 	}
 	@Given("pomuser is on login page")
 	public void pomuser_is_on_login_page() {
-		test = reports.startTest("LoginTest");
+		test = reports.startTest("Test Login");
 		test.log(LogStatus.INFO	, "Launcting the application " + url);	
 	    driver.get(url);
 	    test.log(LogStatus.PASS, "launching application is successful");
